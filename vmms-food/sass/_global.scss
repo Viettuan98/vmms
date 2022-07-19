@@ -1,0 +1,53 @@
+a:hover {
+  color: $primary-color;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+  outline: none;
+}
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+.owl-carousel {
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn {
+  margin: 3rem auto 0;
+  @include font-size(1.6, 2.2);
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: block;
+  width: fit-content;
+  @include media-breakpoint-down(sm) {
+    margin: 1rem auto 0;
+  }
+  &.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $black;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.menu-bars-close {
+  transition: 0.5s;
+  &--toggle {
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+}
+.section-py {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
