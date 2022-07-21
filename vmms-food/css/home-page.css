@@ -657,6 +657,10 @@ a:hover {
 .home-page .introduce-content__text {
   margin-top: 2rem;
 }
+.home-page .aboutus-content__text span,
+.home-page .introduce-content__text span {
+  font-weight: 600;
+}
 .home-page .aboutus-content__text p + p,
 .home-page .introduce-content__text p + p {
   margin-top: 2rem;
@@ -686,6 +690,7 @@ a:hover {
   position: relative;
   background: transparent url(../images/bg-home2.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .home-page .food-home::before {
   content: "";
@@ -775,6 +780,7 @@ a:hover {
   font-style: italic;
   z-index: 2;
   background: #fff;
+  color: #484848;
 }
 .home-page .food-home .food-list .box-food::before {
   content: "........................................................";
@@ -849,7 +855,7 @@ a:hover {
   color: #000;
 }
 .home-page .customer-review {
-  background: rgba(240, 240, 240, 0.6);
+  background: rgba(239, 239, 239, 0.6);
 }
 .home-page .customer-review__heading {
   font-size: 3rem;
@@ -974,7 +980,7 @@ a:hover {
 .home-page .customer-review-list .owl-dots {
   position: absolute;
   left: 50%;
-  bottom: 0.5rem;
+  bottom: -0.9rem;
   transform: translateX(-50%);
   display: flex;
   align-items: center;

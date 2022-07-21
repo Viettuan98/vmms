@@ -522,6 +522,7 @@ $grid-breakpoints: (
       font-style: italic;
       z-index: 2;
       background: $white;
+      color: #484848;
     }
     &::before {
       content: '........................................................';
