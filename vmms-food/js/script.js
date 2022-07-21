@@ -26,6 +26,9 @@ $(document).ready(function () {
         $('.header').removeClass('stuck');
       }
     });
+    $('.header-logo .menu-search').click(function (e) {
+      $('.menu-search form').toggleClass('active');
+    });
   }
   if ($(window).width() > 1024) {
     $(window).scroll(function () {

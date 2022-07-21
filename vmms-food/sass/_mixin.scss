@@ -42,7 +42,7 @@
       top: 50%;
       transform: translateY(-50%);
       @include media-breakpoint-down(md) {
-        left: -0.5rem;
+        left: 0rem;
       }
     }
     .owl-nav button.owl-next {
@@ -54,7 +54,7 @@
       top: 50%;
       transform: translateY(-50%);
       @include media-breakpoint-down(md) {
-        right: -0.5rem;
+        right: 0rem;
       }
     }
     .owl-nav button.owl-prev,
@@ -482,6 +482,9 @@ $grid-breakpoints: (
   text-transform: uppercase;
   position: relative;
   padding-bottom: 1rem;
+  @include media-breakpoint-down(md) {
+    @include font-size(2, 2.7);
+  }
   &::after {
     content: '';
     @include box(17rem, 0.3rem);
@@ -500,6 +503,9 @@ $grid-breakpoints: (
     position: relative;
     overflow: hidden;
     @include font-size(1.8, 2.4);
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1.4rem;
+    }
     &__name {
       font-weight: 600;
       padding-right: 1rem;
@@ -507,6 +513,9 @@ $grid-breakpoints: (
       flex-shrink: 0;
       z-index: 2;
       background: $white;
+      @include media-breakpoint-down(sm) {
+        @include font-size(1.4, 1.9);
+      }
     }
     &__price {
       font-weight: 600;
@@ -515,6 +524,9 @@ $grid-breakpoints: (
       flex-shrink: 0;
       z-index: 2;
       background: $white;
+      @include media-breakpoint-down(sm) {
+        @include font-size(1.4, 1.9);
+      }
     }
     &__desc {
       width: 100%;
@@ -523,6 +535,10 @@ $grid-breakpoints: (
       z-index: 2;
       background: $white;
       color: #484848;
+      @include media-breakpoint-down(sm) {
+        margin-top: 0.6rem;
+        @include font-size(1.4, 1.9);
+      }
     }
     &::before {
       content: '........................................................';

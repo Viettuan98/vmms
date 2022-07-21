@@ -46,4 +46,24 @@ $(document).ready(function () {
       992: {},
     },
   });
+  if ($(window).width() < 768) {
+    $('.why-choose-cards')
+      .addClass('owl-carousel')
+      .owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        dots: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navigation: true,
+        responsiveClass: true,
+        responsiveRefreshRate: true,
+        navText: [
+          "<img src='./images/icon-left-sm.svg' alt='Next'>",
+          "<img src='./images/icon-right-sm.svg' alt='Prev'>",
+        ],
+      });
+  }
 });

@@ -22,8 +22,8 @@ a:hover {
   transition: all 0.3s ease;
   display: block;
   width: fit-content;
-  @include media-breakpoint-down(sm) {
-    margin: 1rem auto 0;
+  @include media-breakpoint-down(md) {
+    margin: 2rem auto 0;
   }
   &.btn-primary {
     background-color: $primary-color;
@@ -50,4 +50,8 @@ a:hover {
 .section-py {
   padding-top: 8rem;
   padding-bottom: 8rem;
+  @include media-breakpoint-down(md) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
