@@ -55,3 +55,34 @@ a:hover {
     left: 0;
   }
 }
+.breadcrumb {
+  background: #f5f5f5;
+  height: 4.9rem;
+  padding: 1.5rem 0;
+  margin-bottom: 8rem;
+  &-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  &-item {
+    a {
+      color: #00000073;
+      @include font-size(1.4, 2.2);
+      &:hover {
+        color: #000000;
+      }
+    }
+    &.active {
+      color: #000000;
+      @include font-size(1.4, 2.2);
+    }
+    & + .breadcrumb-item {
+      padding-left: 0.8rem;
+      &::before {
+        padding-right: 0.8rem;
+        color: #00000073;
+      }
+    }
+  }
+}

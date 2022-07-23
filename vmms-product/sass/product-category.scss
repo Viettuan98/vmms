@@ -1,0 +1,16 @@
+// sass ./sass/product-category.scss ./css/product-category.css --watch
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "global";
+@import "header";
+@import "footer";
+
+.product-category {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    @include box-product(100%);
+  }
+}
