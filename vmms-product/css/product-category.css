@@ -295,7 +295,7 @@ a:hover {
 }
 @media (max-width: 767.98px) {
   .breadcrumb {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
 .breadcrumb-list {
@@ -1481,6 +1481,11 @@ a:hover {
   transition: all 0.4s ease;
   border-radius: 1rem;
 }
+@media (max-width: 1199.98px) {
+  .product-category .products .box-product-tooltip {
+    display: none;
+  }
+}
 .product-category .products .box-product-tooltip--top {
   padding-right: 3.5rem;
   position: relative;
@@ -1605,6 +1610,28 @@ a:hover {
 .product-category .products-pagination .pagination .page-item.disabled .page-link {
   color: #d9d9d9;
 }
+.product-category .btn-filter-mobi {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .product-category .btn-filter-mobi {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .product-category .btn-filter-mobi img {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-block;
+  }
+  .product-category .btn-filter-mobi span {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: #000;
+  }
+}
 .product-category .sort-bar {
   background: #f5f5f5;
   border-radius: 1rem;
@@ -1616,6 +1643,7 @@ a:hover {
 @media (max-width: 767.98px) {
   .product-category .sort-bar {
     padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 .product-category .sort-bar-item {
@@ -1683,7 +1711,16 @@ a:hover {
 }
 @media (max-width: 991.98px) {
   .product-category .product-sidebar {
-    display: none;
+    display: block;
+    position: fixed;
+    width: 28rem;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    border-radius: 0;
+    overflow-y: auto;
+    padding: 1.5rem;
   }
 }
 .product-category .product-sidebar .product-cat {
@@ -1776,7 +1813,7 @@ a:hover {
 }
 .product-category .product-sidebar .product-filter-item {
   padding: 2rem 0;
-  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 .product-category .product-sidebar .product-filter-item .filter-title {
   display: flex;
@@ -1845,6 +1882,22 @@ a:hover {
   font-weight: 600;
   color: #dd9825;
   margin-top: 1rem;
+}
+.product-category .product-sidebar .product-filter .reset-filter {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  padding: 1.1rem 0;
+  width: 100%;
+  border: 0;
+  margin-top: 3rem;
+  background: #cb1515;
+  color: #fff;
+  border-radius: 0.6rem;
+  transition: all 0.3s linear;
+}
+.product-category .product-sidebar .product-filter .reset-filter:hover {
+  opacity: 0.8;
 }
 
 @keyframes slide-up {

@@ -61,7 +61,7 @@ a:hover {
   padding: 1.5rem 0;
   margin-bottom: 8rem;
   @include media-breakpoint-down(sm){
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   &-list {
     display: flex;
