@@ -310,7 +310,8 @@ a:hover {
   background: #fff;
   padding: 2rem 0 0.5rem;
 }
-.header.stuck .header-nav .menu-link {
+.header.stuck .header-nav .menu-link,
+.header.stuck .header-nav .menu .icon-search {
   color: #000;
 }
 @media (max-width: 991.98px) {
@@ -472,6 +473,17 @@ a:hover {
   .header-logo .menu-search form button i {
     height: 1.4rem;
     font-size: 1.4rem;
+  }
+  .header-logo .menu-search form::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #f2b94c;
+    position: absolute;
+    right: 0.8rem;
+    top: -11px;
   }
 }
 @media (max-width: 991.98px) {

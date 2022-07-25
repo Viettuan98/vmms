@@ -16,7 +16,8 @@
     animation: stuckMoveDown 0.6s;
     z-index: 100;
     background: #fff;
-    .header-nav .menu-link{
+    .header-nav .menu-link,
+    .header-nav .menu .icon-search {
       color: #000;
     }
     padding: 2rem 0 0.5rem;
@@ -166,7 +167,19 @@
               font-size: 1.4rem;
             }
           }
+          &::before{
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 7px solid $primary-color;
+            position: absolute;
+            right: .8rem;
+            top: -11px;
+          }
         }
+
       }
       i {
         @include media-breakpoint-down(md) {
