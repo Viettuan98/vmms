@@ -16,6 +16,10 @@
     animation: stuckMoveDown 0.6s;
     z-index: 100;
     background: #fff;
+    .header-nav .menu-link{
+      color: #000;
+    }
+    padding: 2rem 0 0.5rem;
   }
   @include media-breakpoint-down(md) {
     position: unset;
