@@ -1882,6 +1882,7 @@ a:hover {
   font-weight: 600;
   color: #dd9825;
   margin-top: 1rem;
+  padding-left: 2.6rem;
 }
 .product-category .product-sidebar .product-filter-item .filter-list-value .value-all::after {
   content: "\f107";
