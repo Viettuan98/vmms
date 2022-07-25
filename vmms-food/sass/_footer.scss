@@ -7,7 +7,7 @@
     padding: 3rem 0;
     border-bottom: 1px solid rgb(255 255 255 / 40%);
     @include media-breakpoint-down(sm) {
-      padding: 2rem 1.5rem 0;
+      padding: 0 1.5rem 0;
       border-bottom: none;
     }
   }
@@ -35,7 +35,7 @@
       max-width: 50%;
     }
     @include media-breakpoint-down(sm) {
-      padding: 1.5rem 0 1.5rem;
+      padding: 2rem 0 2rem;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%;
@@ -265,6 +265,7 @@
         width: 100%;
         padding: 2rem 0;
         border-bottom: 1px solid #fff;
+        gap: 0.6rem;
       }
       &__link a {
         @include font-size(1.2, 2.2);

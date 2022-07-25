@@ -13,4 +13,7 @@
     grid-gap: 3rem;
     @include box-product(100%);
   }
+  .product-row{
+    margin-bottom: 8rem;
+  }
 }

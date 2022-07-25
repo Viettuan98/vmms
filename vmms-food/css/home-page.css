@@ -636,7 +636,7 @@ a:hover {
 }
 @media (max-width: 767.98px) {
   .footer--top {
-    padding: 2rem 1.5rem 0;
+    padding: 0 1.5rem 0;
     border-bottom: none;
   }
 }
@@ -665,7 +665,7 @@ a:hover {
 }
 @media (max-width: 767.98px) {
   .footer-col {
-    padding: 1.5rem 0 1.5rem;
+    padding: 2rem 0 2rem;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -907,6 +907,7 @@ a:hover {
     width: 100%;
     padding: 2rem 0;
     border-bottom: 1px solid #fff;
+    gap: 0.6rem;
   }
 }
 .footer--bottom .menu-footer__link a {
@@ -1009,6 +1010,12 @@ a:hover {
 .home-page .introduce-content__text {
   margin-top: 2rem;
 }
+@media (max-width: 767.98px) {
+  .home-page .aboutus-content__text,
+.home-page .introduce-content__text {
+    margin-top: 1.4rem;
+  }
+}
 .home-page .aboutus-content__text span,
 .home-page .introduce-content__text span {
   font-weight: 600;
@@ -1045,6 +1052,7 @@ a:hover {
   .home-page .aboutus-content__img-mobi {
     margin-top: 2rem !important;
     border-radius: 1rem;
+    margin-top: 1.4rem !important;
   }
   .home-page .aboutus-content__img-mobi.image-cover {
     position: relative;
@@ -1383,6 +1391,11 @@ a:hover {
     right: 2rem !important;
   }
 }
+@media (max-width: 767.98px) {
+  .home-page .why-choose-card {
+    padding-bottom: 2rem;
+  }
+}
 .home-page .why-choose-card__img {
   width: 16.2rem;
   height: 16.2rem;
@@ -1424,7 +1437,7 @@ a:hover {
   position: relative;
   padding-bottom: 1rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 991.98px) {
   .home-page .customer-review__heading {
@@ -1451,6 +1464,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
+}
+@media (max-width: 767.98px) {
+  .home-page .customer-review .review-item {
+    padding-bottom: 2rem;
+  }
 }
 .home-page .customer-review .review-item__avatar {
   width: 8rem;
@@ -1647,6 +1665,11 @@ a:hover {
 .home-page .form-consultation .form-home__item input[type=submit]:hover {
   opacity: 0.7;
 }
+@media (max-width: 767.98px) {
+  .home-page .form-consultation .form-home__item input[type=submit] {
+    margin-top: 0.6rem;
+  }
+}
 .home-page .form-consultation .form-home__item.required label:after {
   content: "*";
   color: #be1522;
@@ -1710,6 +1733,11 @@ a:hover {
   left: 0;
   bottom: 0;
 }
+@media (max-width: 767.98px) {
+  .home-page .news-home__heading {
+    margin-bottom: 1.4rem;
+  }
+}
 .home-page .news-home__heading::after {
   left: 50%;
   transform: translateX(-50%);
@@ -1754,9 +1782,14 @@ a:hover {
   margin-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+}
+@media (max-width: 767.98px) {
+  .home-page .news-home-list .box-blog-post__title {
+    margin-bottom: 0.6rem;
+  }
 }
 .home-page .news-home-list .box-blog-post__date {
   margin-top: 1rem;
@@ -1776,6 +1809,12 @@ a:hover {
   background: url(../images//icon-date.svg) no-repeat center;
   background-size: contain;
   margin-right: 0.5rem;
+}
+@media (max-width: 767.98px) {
+  .home-page .news-home-list .box-blog-post__date {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
 }
 .home-page .news-home-list .box-blog-post__desc {
   font-size: 1.6rem;

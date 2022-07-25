@@ -23,6 +23,9 @@
       }
       &__text {
         margin-top: 2rem;
+        @include media-breakpoint-down(sm){
+          margin-top: 1.4rem;
+        }
         span {
           font-weight: 600;
         }
@@ -58,6 +61,7 @@
           @include img-cover(63.19%);
           margin-top: 2rem !important;
           border-radius: 1rem;
+          margin-top: 1.4rem !important;
         }
       }
       &__text {
@@ -206,6 +210,9 @@
       }
     }
     &-card {
+      @include media-breakpoint-down(sm){
+        padding-bottom: 2rem;
+      }
       &__img {
         @include box(16.2rem);
         margin: 0 auto 2rem;
@@ -237,7 +244,7 @@
     &__heading {
       @include section-heading;
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       &::after {
         left: 50%;
         transform: translateX(-50%);
@@ -249,6 +256,9 @@
       align-items: center;
       justify-content: center;
       padding-bottom: 3rem;
+      @include media-breakpoint-down(sm){
+        padding-bottom: 2rem;
+      }
       &__avatar {
         @include box(8rem);
         border-radius: 50%;
@@ -352,6 +362,8 @@
           padding: 0.5rem 1rem;
           font-size: 1.4rem;
           width: 100%;
+          
+
         }
         input[type='submit'] {
           width: fit-content;
@@ -366,6 +378,9 @@
           align-items: center;
           &:hover {
             opacity: 0.7;
+          }
+          @include media-breakpoint-down(sm){
+            margin-top: 0.6rem;
           }
         }
       }
@@ -411,6 +426,9 @@
       @include section-heading;
       text-align: center;
       margin-bottom: 3rem;
+      @include media-breakpoint-down(sm){
+        margin-bottom: 1.4rem;
+      }
       &::after {
         left: 50%;
         transform: translateX(-50%);
@@ -435,9 +453,12 @@
           margin-bottom: 1rem;
           overflow: hidden;
           text-overflow: ellipsis;
-          -webkit-line-clamp: 2;
+          -webkit-line-clamp: 3;
           display: -webkit-box;
           -webkit-box-orient: vertical;
+          @include media-breakpoint-down(sm){
+          margin-bottom: 0.6rem;
+          }
         }
         &__date {
           margin-top: 1rem;
@@ -455,6 +476,11 @@
             background-size: contain;
             margin-right: 0.5rem;
           }
+          @include media-breakpoint-down(sm){
+            margin-top: 0.6rem;
+          margin-bottom: 0.6rem;
+          }
+
         }
         &__desc {
           @include font-size(1.6, 2.2);
