@@ -42,12 +42,12 @@ $(document).ready(function () {
         if ($(this).hasClass('show')) {
             $(this).removeClass('show');
             $(this).prev().removeClass('show-item');
-            
+            $(this).html('Xem thêm'); 
         }
         else{
             $(this).addClass('show');
             $(this).prev().addClass('show-item');
-            
+            $(this).html('Thu gọn');
         }
     });
 });

@@ -1883,6 +1883,16 @@ a:hover {
   color: #dd9825;
   margin-top: 1rem;
 }
+.product-category .product-sidebar .product-filter-item .filter-list-value .value-all::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.product-category .product-sidebar .product-filter-item .filter-list-value .value-all.show:after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Pro";
+}
 .product-category .product-sidebar .product-filter .reset-filter {
   font-size: 1.6rem;
   line-height: 2.2rem;

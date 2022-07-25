@@ -290,6 +290,14 @@
             font-weight: 600;
             color: $primary-color;
             margin-top: 1rem;
+            &::after {
+              @include fa5("\f107");
+              margin-left: 0.5rem;
+              font-weight: 400;
+            }
+            &.show:after {
+              @include fa5("\f106");
+            }
           }
         }
 
