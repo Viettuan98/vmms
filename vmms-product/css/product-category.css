@@ -1837,12 +1837,12 @@ a:hover {
 .product-category .product-sidebar .product-filter-item .filter-title i.show {
   background-image: url(../images/icon-minus.svg);
 }
-.product-category .product-sidebar .product-filter-item .filter-list-value .filter-list {
+.product-category .product-sidebar .product-filter-item .filter-list-value .filter-list-all {
   overflow: hidden;
   height: 15rem;
   transition: height 300ms;
 }
-.product-category .product-sidebar .product-filter-item .filter-list-value .filter-list.show-item {
+.product-category .product-sidebar .product-filter-item .filter-list-value .filter-list-all.show-item {
   height: auto;
 }
 .product-category .product-sidebar .product-filter-item .filter-list-value li {
