@@ -293,6 +293,11 @@ a:hover {
   padding: 1.5rem 0;
   margin-bottom: 8rem;
 }
+@media (max-width: 767.98px) {
+  .breadcrumb {
+    margin-bottom: 3rem;
+  }
+}
 .breadcrumb-list {
   display: flex;
   flex-flow: row wrap;
@@ -1607,6 +1612,11 @@ a:hover {
   padding: 1.4rem 2rem;
   display: flex;
   align-items: center;
+}
+@media (max-width: 767.98px) {
+  .product-category .sort-bar {
+    padding: 1rem;
+  }
 }
 .product-category .sort-bar-item {
   position: relative;

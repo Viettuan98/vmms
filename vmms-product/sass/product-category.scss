@@ -48,6 +48,9 @@
     padding: 1.4rem 2rem;
     display: flex;
     align-items: center;
+    @include media-breakpoint-down(sm){
+      padding: 1rem ;
+    }
     &-item {
       position: relative;
       span {
