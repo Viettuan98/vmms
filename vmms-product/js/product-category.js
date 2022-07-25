@@ -50,4 +50,14 @@ $(document).ready(function () {
             $(this).html('Thu gọn');
         }
     });
+
+    $('.btn-filter-mobi').click(function () {
+        $('.product-sidebar').toggleClass('product-sidebar-toggle');
+        $('.menu-bars-close').toggleClass('menu-bars-close--toggle');
+    });
+
+    $('.menu-bars-close').click(function () {
+        $('.product-sidebar').removeClass('product-sidebar-toggle');
+        $('.menu-bars-close').removeClass('menu-bars-close--toggle');
+    });
 });

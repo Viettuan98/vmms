@@ -1717,10 +1717,14 @@ a:hover {
     height: 100vh;
     top: 0;
     z-index: 100;
-    left: 0;
+    left: -28rem;
     border-radius: 0;
     overflow-y: auto;
     padding: 1.5rem;
+    transition: all 0.5s;
+  }
+  .product-category .product-sidebar-toggle {
+    left: 0;
   }
 }
 .product-category .product-sidebar .product-cat {
