@@ -14,6 +14,7 @@
     @include box-product(100%);
     @include media-breakpoint-down(sm){
       grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
     }
   }
   .product-row {
