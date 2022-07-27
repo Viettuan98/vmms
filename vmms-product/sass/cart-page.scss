@@ -7,7 +7,279 @@
 @import "footer";
 
 .cart-page {
-    .purchase-step{
-        margin-bottom: 3rem;
+  .purchase-step {
+    margin-bottom: 3rem;
+  }
+  .cart-wrapper {
+    margin-bottom: 8.2rem;
+  }
+  .cart-info {
+    .cart-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      width: 100%;
+      position: relative;
+      padding: 2rem 0;
+      border-top: 1px solid #cccccc;
+      @include media-breakpoint-down(sm){
+        gap: 1rem 0;
+        justify-content: space-between;
+      }
+      &-check {
+        padding-bottom: 2rem;
+        display: flex;
+        align-items: center;
+
+        .count-check {
+          margin-left: 1.2rem;
+          @include font-size(1.6, 2.2);
+          color: #000000;
+        }
+        
+
+      }
+      .product-check{
+        margin-bottom: 2.5rem;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid #cccccc;
+      }
+      .product-check {
+        width: 1.6rem;
+        flex-shrink: 0;
+        margin-right: 1.2rem;
+      }
+      .product-remove {
+        position: absolute;
+        @include box(1.4rem);
+        background: url(../images/icon-close.svg) no-repeat center;
+        background-size: contain;
+        top: 2rem;
+        right: 0;
+        cursor: pointer;
+      }
+      .product-subtotal {
+        width: 12.2rem;
+        padding-left: 1.5rem;
+        flex-shrink: 0;
+        color: $secondary-color;
+        @include font-size(1.4, 1.9);
+        text-align: right;
+      }
+      .product-thumbnail {
+        width: 6.7rem;
+        flex-shrink: 0;
+        .img {
+          width: 100%;
+          display: block;
+          @include img-cover(100%);
+        }
+      }
+      .product-quantity {
+        width: 12.2rem;
+        flex-shrink: 0;
+        overflow: hidden;
+        @include media-breakpoint-down(sm){
+        
+        }
+        .quantity {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f5f5f5;
+          border-radius: 0.6rem;
+          height: 4rem;
+          @include media-breakpoint-down(sm){
+            height: 3rem;
+          }
+
+          input {
+            width: 4rem;
+            border: 0;
+            text-align: center;
+            background: transparent;
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+              display: none;
+            }
+          }
+          button {
+            @include box(1.2rem);
+            outline: none !important;
+            border: 0;
+            background: transparent;
+            background-size: contain;
+            background-position: center;
+            &.btn-minus {
+              background-image: url(../images/icon-minus.svg);
+            }
+            &.btn-plus {
+              background-image: url(../images/icon-plus.svg);
+            }
+          }
+        }
+      }
+
+      .product-info {
+        padding: 0 1rem;
+        flex: 1;
+        @include media-breakpoint-down(sm){
+          width: calc(100% - 11rem);
+          flex:unset
+        }
+        &__name {
+          @include font-size(1.4, 1.9);
+          color: #000;
+        }
+        &__attr {
+          li {
+            @include font-size(1.4, 1.9);
+            margin-top: 0.5rem;
+            strong {
+              color: #000000;
+              font-weight: 600;
+            }
+          }
+        }
+      }
     }
+    .product-check {
+      position: relative;
+      border-radius: 2px;
+      @include box(1.6rem);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checked {
+        @include box(1.6rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #eee;
+        &::after {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Pro";
+          background: #dd9825;
+          color: #fff;
+          @include box(100%);
+          position: absolute;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          border-radius: 2px;
+        }
+      }
+      input:checked ~ .checked::after {
+        display: flex !important;
+      }
+    }
+  }
+  .cart-sidebar{
+    background: #EDEDED;
+    padding: 2rem;
+    border-radius: 1rem;
+    @include media-breakpoint-down(md){
+      margin-top: 3rem;
+    }
+    .cart-coupon{
+      margin-bottom: 2.3rem;
+      form{
+        display: flex;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      &__apply{
+        @include font-size(1.6,2.2);
+        background: $primary-color;
+        padding: 0.9rem 1.1rem;
+        border: 0;
+        outline: none !important;
+        color:#fff;
+        border-radius:0 6px 6px 0;
+        flex-shrink: 0;
+      }
+      &__code{
+      @include font-size(1.4,1.9);
+      flex: 1;
+      padding: 1rem 0 1rem 2rem ;
+      border: 0;
+      outline: none !important;
+      }
+    }
+    .cart-total{
+      &-item{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        span:first-of-type{
+          @include font-size(1.4,1.9);
+        }
+        span:nth-of-type(2){
+          @include font-size(1.6,2.2);
+        }
+        &:first-of-type{
+          padding-bottom: 1.3rem;
+          span.price{
+            color: #CB1515;
+          }
+        }
+        &:nth-of-type(2){
+          padding-bottom: 2rem;
+          border-bottom: 1px solid #CCCCCC;
+          span.price{
+            color: #169E30;
+          }
+        }
+        &:nth-of-type(3){
+          padding-top: 2rem;
+          margin-bottom: 3rem;
+          span:first-of-type{
+            @include font-size(1.6,2.2);
+            font-weight: 600;
+            color: #000000;
+          }
+          span.price{
+            @include font-size(2.4,3.3);
+            font-weight: 600;
+            color: #CB1515;
+          }
+          span.note{
+            width: 100%;
+            text-align: right;
+            margin-top: 0.5rem;
+            @include font-size(1.4,1.9);
+          }
+        }
+      }
+    }
+    .to-checkout{
+      width: 100%;
+      @include font-size(1.6,2.2);
+      font-weight: 600;
+      color:#fff;
+      text-align: center;
+      border: 0;
+      outline: none !important;
+      background: $primary-color;
+      padding: 1.1rem 0;
+      border-radius: .6rem;
+      transition: all .3s;
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
 }

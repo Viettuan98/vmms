@@ -60,6 +60,9 @@ a:hover {
   height: 4.9rem;
   padding: 1.5rem 0;
   margin-bottom: 8rem;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 4rem;
+  }
   @include media-breakpoint-down(sm) {
     margin-bottom: 1.5rem;
   }
@@ -96,11 +99,21 @@ a:hover {
   position: relative;
   &::before{
     content: "";
-    width: 100%;
+    width: calc(100% - 3rem);
     height: 1px;
     position: absolute;
     bottom: 4px;
+    left: 1.5rem;
     background: #707070;
+  }
+  &::after{
+    content: "";
+    width: calc(25% - 2rem);
+    height: 3px;
+    position: absolute;
+    bottom: 4px;
+    left: 1.5rem;
+    background: $primary-color;
   }
   &-item {    
     a {
