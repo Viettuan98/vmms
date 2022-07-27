@@ -1,0 +1,13 @@
+// sass ./sass/cart-page.scss ./css/cart-page.css --watch
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "global";
+@import "header";
+@import "footer";
+
+.cart-page {
+    .purchase-step{
+        margin-bottom: 3rem;
+    }
+}
