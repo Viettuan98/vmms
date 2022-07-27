@@ -210,6 +210,7 @@
         color:#fff;
         border-radius:0 6px 6px 0;
         flex-shrink: 0;
+        width: 8.6rem;
       }
       &__code{
       @include font-size(1.4,1.9);
@@ -280,6 +281,43 @@
       &:hover{
         opacity: .8;
       }
+    }
+  }
+}
+.modal-open .modal {
+  background: rgb(43 43 43 / 70%);
+  .modal-dialog{
+    top: 40%;
+    
+  }
+  .modal-content{
+    border-radius: 1rem;
+    padding:3rem 2rem 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .modal-body{
+   
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+
+    img{
+      @include box(3rem);
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    p{
+      text-align: center;
+      @include font-size(1.6,2.2);
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+    button{
+      background: $primary-color;
+      border-radius: 6px;
+      border: none;
     }
   }
 }

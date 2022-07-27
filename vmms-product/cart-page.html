@@ -387,10 +387,10 @@
                   <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="cart-sidebar">
                       <div class="cart-coupon">
-                        <form action="">
+                          <form onsubmit="return false">
                           <input type="text" class="cart-coupon__code" value="" placeholder="Nhập mã giảm giá">
-                          <input type="submit" class="cart-coupon__apply" name="" value="Áp dụng">
-                        </form>
+                          <button type="submit" class="cart-coupon__apply" data-toggle="modal" data-target="#modalcart">Áp dụng</button>
+                          </form>
                       </div>
                       <div class="cart-total">
                         <div class="cart-total-item">
@@ -409,6 +409,18 @@
                       </div>
                       <button class="to-checkout">Đặt hàng (3)</button>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade modal-popup modal-cart" tabindex="-1" role="dialog" id="modalcart"aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="./images/icon-check-green.svg" alt="">
+                      <p>Mã khuyến mãi được áp dụng thành công!</p>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </div>
+                    
                   </div>
                 </div>
               </div>

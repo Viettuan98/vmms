@@ -1555,6 +1555,7 @@ a:hover {
   color: #fff;
   border-radius: 0 6px 6px 0;
   flex-shrink: 0;
+  width: 8.6rem;
 }
 .cart-page .cart-sidebar .cart-coupon__code {
   font-size: 1.4rem;
@@ -1629,6 +1630,42 @@ a:hover {
 }
 .cart-page .cart-sidebar .to-checkout:hover {
   opacity: 0.8;
+}
+
+.modal-open .modal {
+  background: rgba(43, 43, 43, 0.7);
+}
+.modal-open .modal .modal-dialog {
+  top: 40%;
+}
+.modal-open .modal .modal-content {
+  border-radius: 1rem;
+  padding: 3rem 2rem 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.modal-open .modal .modal-body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.modal-open .modal .modal-body img {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: 0 auto 2rem;
+}
+.modal-open .modal .modal-body p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.modal-open .modal .modal-body button {
+  background: #dd9825;
+  border-radius: 6px;
+  border: none;
 }
 
 /*# sourceMappingURL=cart-page.css.map */
