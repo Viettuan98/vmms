@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1588" data-name="Rectangle 1588" width="14" height="14" transform="translate(118 335)" fill="rgba(0,0,0,0.25)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_423" data-name="Mask Group 423" transform="translate(-118 -335)" clip-path="url(#clip-path)">
+    <g id="download_3_" data-name="download (3)" transform="translate(118 335)">
+      <g id="Group_3871" data-name="Group 3871">
+        <path id="Path_948" data-name="Path 948" d="M2.344,8.031H4.531v.82H2.344Z" transform="translate(0 -1.004)" fill="rgba(0,0,0,0.25)"/>
+        <path id="Path_949" data-name="Path 949" d="M12.031,5.687H1.406A1.329,1.329,0,0,0,0,6.918V13.48a1.329,1.329,0,0,0,1.406,1.23H12.031a1.329,1.329,0,0,0,1.406-1.23V6.918A1.329,1.329,0,0,0,12.031,5.687ZM1.406,7.328a.442.442,0,0,1,.469-.41H5a.442.442,0,0,1,.469.41V8.969A.442.442,0,0,1,5,9.379H1.875a.442.442,0,0,1-.469-.41Zm.469,3.691h.937a.414.414,0,1,1,0,.82H1.875a.414.414,0,1,1,0-.82ZM5,13.48H1.875a.414.414,0,1,1,0-.82H5a.414.414,0,1,1,0,.82Zm.625-1.641H4.687a.414.414,0,1,1,0-.82h.937a.414.414,0,1,1,0,.82Zm2.812,0H7.5a.414.414,0,1,1,0-.82h.937a.414.414,0,1,1,0,.82Zm3.125-2.461H10a.414.414,0,1,1,0-.82h1.562a.414.414,0,1,1,0,.82Zm0-1.641H10a.414.414,0,1,1,0-.82h1.562a.414.414,0,1,1,0,.82Z" transform="translate(0 -0.711)" fill="rgba(0,0,0,0.25)"/>
+        <path id="Path_950" data-name="Path 950" d="M15.952,7.853l-.93-3.037-1.565.367a1.973,1.973,0,0,1,.918,1.626V9.5l.583-.137A1.224,1.224,0,0,0,15.952,7.853Z" transform="translate(0 -0.602)" fill="rgba(0,0,0,0.25)"/>
+        <path id="Path_951" data-name="Path 951" d="M11.645,4.532,14.779,3.8,14.536,3,8.022,4.532Z" transform="translate(0 -0.376)" fill="rgba(0,0,0,0.25)"/>
+        <path id="Path_952" data-name="Path 952" d="M1.093,4.156H4.4l9.894-2.32L14.011.912a1.439,1.439,0,0,0-1.722-.87L2.026,2.448a1.224,1.224,0,0,0-.994,1.507Z" transform="translate(0 0)" fill="rgba(0,0,0,0.25)"/>
+      </g>
+    </g>
+  </g>
+</svg>
