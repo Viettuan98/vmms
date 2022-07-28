@@ -295,14 +295,23 @@
     padding:3rem 2rem 2rem;
     max-width: 40rem;
     margin: 0 auto;
+    &::before{
+      content: "";
+      width:0px;
+      height:0px;
+      border-left:1rem solid transparent;
+      border-right:1rem solid transparent;
+      border-bottom:1rem solid #fff;
+      display: inline-block;
+      position: absolute;
+      top: -0.9rem;
+      right: 6.4rem;
+    }
   }
   .modal-body{
-   
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    
-
     img{
       @include box(3rem);
       display: block;

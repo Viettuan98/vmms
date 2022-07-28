@@ -1,0 +1,104 @@
+// sass ./sass/checkout-page.scss ./css/checkout-page.css --watch
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "global";
+@import "header";
+@import "footer";
+.checkout-page{
+    .purchase-step{
+        margin-bottom: 2rem;
+        &::after{
+            width: calc(100% - 3rem);
+        }
+        &-item a::before{
+            background: $primary-color;
+        }
+    }
+    .checkout-wrapper{
+        background: #EDEDED;
+        border-radius: 1rem; 
+        padding: 6rem 1.5rem 4rem;
+        text-align: center;
+        margin-bottom: 8.2rem;
+        img{
+            display: inline-block;
+            @include box(6rem);
+            margin-bottom: 3rem;
+        }
+        h2{
+            margin-bottom: 2rem;
+            @include font-size(2.4,3.3);
+            font-weight: 600;
+            color:#000;
+            @include media-breakpoint-down(sm){
+                @include font-size(1.8,2.6);
+            }
+        }
+        p{
+            @include font-size(1.4,2.2);
+            &:nth-of-type(2){
+                @include font-size(1.6,2.2);
+                color: #000;
+                margin-bottom: 2.3rem;
+            }
+            &:nth-of-type(3){
+                max-width: 62.4rem;
+                margin: 0 auto;
+                @include font-size(1.4,2.2);
+                margin-bottom: 2.3rem;
+                strong{
+                    @include font-size(1.6,2.2);
+                    font-weight: 600;
+                    color:$secondary-color
+                }
+            }
+        }
+        .code-orders{
+            display: inline-block;
+            padding: 1.5rem 4.7rem;
+            background: #FFFFFF;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 6px;
+            color:$primary-color;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        .btn-action{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:2rem;
+            @include media-breakpoint-down(sm){
+               flex-direction: column;
+            }
+            .btn{
+                margin:0;
+                min-width: 27.9rem;
+                &::before{
+                    content: "";
+                    @include box(1.6rem,1.5rem );
+                    display: inline-block;
+                    margin-top: .2rem;
+                    margin-right: 0.5rem;
+                    
+                }
+                &-history{
+                    &::before{
+                        background: url(../images/icon-history.svg) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                &-return{
+                    &::before{
+                        background: url(../images/icon-return.svg) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
