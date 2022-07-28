@@ -98,7 +98,7 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     width: calc(100% - 3rem);
     height: 1px;
@@ -107,7 +107,7 @@ a:hover {
     left: 1.5rem;
     background: #707070;
   }
-  &::after{
+  &::after {
     content: "";
     width: calc(25% - 2rem);
     height: 3px;
@@ -116,31 +116,39 @@ a:hover {
     left: 1.5rem;
     background: $primary-color;
   }
-  &-item {    
+  &-item {
     a {
       @include font-size(1.4, 1.9);
       color: #707070;
       padding-bottom: 2rem;
       display: block;
-      position: relative;  
-      &::before{
+      position: relative;
+      &::before {
         content: "";
         display: inline-block;
         @include box(1rem);
         border-radius: 50%;
         background: #707070;
         position: absolute;
-        bottom:0;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
       }
     }
-    &.active a{
+    &.active a {
       color: #d29e10;
       font-weight: 600;
-      &::before{
+      &::before {
         background: #d29e10;
       }
     }
+  }
+}
+.modal-open .modal {
+  padding: 0 !important;
+  background: rgb(43 43 43 / 70%);
+  .modal-dialog{
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

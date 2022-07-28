@@ -83,7 +83,7 @@
                 <div class="account-item">
                   <div class="account-item__title">Tài khoản</div>
                   <div class="account-item__user">
-                    <a href="/dang-nhap">Đăng nhập</a>
+                    <a data-toggle="modal" data-target="#modalsignin">Đăng nhập</a>
                     <i>/</i>
                     <a href="/dang-ky">Đăng ký</a>
                     </dib>
@@ -2276,6 +2276,50 @@
       </div>
     </div>
     <div class="menu-bars-close"></div>
+    <div class="modal fade modal-popup modal-signin" tabindex="-1" role="dialog" id="modalsignin"aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="image">
+              <img src="./images/logo-vmms.png" alt="">
+            </div>
+            <form name="signupform" class="signupform" method="post">
+              <div class="signupform-item">
+                <label for="user_login">Email đăng nhập</label>
+                <input type="text" name="log" id="user_login" class="input email-input" placeholder="Nhập email">
+              </div>
+              <div class="signupform-item">
+                <label for="user_login">Mật khẩu</label>
+                <input type="password" id="user_pass" class="input password-input" value="" placeholder="Nhập mật khẩu">
+                <button type="button" class="hide-pass"></button>
+              </div>
+              <div class="signupform-item">
+                <div class="save-account">
+                  <label class="save-account-label">
+                    <input type="checkbox">
+                    <span class="checked"></span>
+                  </label>
+                  Ghi nhớ tài khoản
+                </div>
+                <a href="/quen-mat-khau" class="forgot-password">
+                  Quên mật khẩu?
+                </a>
+              </div>
+              <button class="btn btn-primary">
+                Đăng ký
+              </button>
+              <div class="to-singin">
+                Bạn chưa có tài khoản? <a href="@">Đăng ký</a>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </div>
   <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>

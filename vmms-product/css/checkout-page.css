@@ -382,6 +382,13 @@ a:hover {
   background: #d29e10;
 }
 
+.modal-open .modal {
+  background: rgba(43, 43, 43, 0.7);
+}
+.modal-open .modal .modal-dialog {
+  top: 40%;
+}
+
 .header.stuck {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
@@ -513,6 +520,7 @@ a:hover {
   font-size: 1.2rem;
   line-height: 1.7rem;
   color: #000;
+  cursor: pointer;
 }
 .header-main--right .header-account .account-item__user i {
   font-size: 1.2rem;
