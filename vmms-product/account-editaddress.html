@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="./css/account-password.css" />
+  <link rel="stylesheet" href="./css/account-editaddress.css" />
 </head>
 
 <body>
@@ -246,7 +246,7 @@
                         <ol class="breadcrumb-list">
                         <li class="breadcrumb-item"><a href="/index.html">Trang chủ</a></li>
                         <li class="breadcrumb-item"><a href="/cart-page.html">Tài khoản</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Đổi mật khẩu</li>
+                        <li class="breadcrumb-item active" aria-current="page">Sổ địa chỉ nhận hàng</li>
                         </ol>
                     </nav>
                 </div>
@@ -255,100 +255,111 @@
         <div class="container account-wrapper">
            <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-3">
-              <div class="account-sidebar">
-                <div class="account-user">
-                  <div class="account-user__avatar">
-                    <img src="./images/avatar-1.jpg" alt="Bính Lê Huy">
-                    <a href="" class="btn-update-image"></a>
-                  </div>
-                  <div class="account-user-info">
-                   <div class="account-user__name">Bính Lê Huy</div>
-                   <div class="account-user__email">binhlh@vicoders.com</div>
-                  </div>
+            <div class="account-sidebar">
+              <div class="account-user">
+                <div class="account-user__avatar">
+                  <img src="./images/avatar-1.jpg" alt="Bính Lê Huy">
+                  <a href="" class="btn-update-image"></a>
                 </div>
-                <nav class="account-nav">
-                  <ul class="menu">
-                    <li class="menu-item">
-                      <a href="" class="menu-link">
-                        <i class="icon icon-user"></i>
-                        Thông tin tài khoản
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link">
-                        <i class="icon icon-history"></i>
-                        Lịch sử mua hàng
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="/account-address.html" class="menu-link active">
-                        <i class="icon icon-addr"></i>
-                        Sổ địa chỉ nhận hàng
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link">
-                        <i class="icon icon-pay"></i>
-                        Phương thức thanh toán
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="/account-password.html" class="menu-link">
-                        <i class="icon icon-pass"></i>
-                        Đổi mật khẩu
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link">
-                        <i class="icon icon-logout"></i>
-                        Đăng xuất
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                <div class="account-user-info">
+                 <div class="account-user__name">Bính Lê Huy</div>
+                 <div class="account-user__email">binhlh@vicoders.com</div>
+                </div>
               </div>
+              <nav class="account-nav">
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      <i class="icon icon-user"></i>
+                      Thông tin tài khoản
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      <i class="icon icon-history"></i>
+                      Lịch sử mua hàng
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="/account-address.html" class="menu-link active">
+                      <i class="icon icon-addr"></i>
+                      Sổ địa chỉ nhận hàng
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      <i class="icon icon-pay"></i>
+                      Phương thức thanh toán
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="/account-password.html" class="menu-link">
+                      <i class="icon icon-pass"></i>
+                      Đổi mật khẩu
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      <i class="icon icon-logout"></i>
+                      Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
             <div class="col-sm-12 col-md-12 col-lg-9">
-              <div class="account-password">
-                <h1>Đổi mật khẩu</h1>
-                <div class="change-password">
-                  <form name="change-pass-form" class="changepass-form" method="post" onsubmit="return false">
-                    <div class="changepass-item required">
-                      <label >Mật khẩu cũ</label>
-                      <input type="password" id="user_pass" class="input password-input" value="" placeholder="Nhập mật khẩu cũ">
-                      <button type="button" class="hide-pass"></button>
+              <div class="account-address">
+                <h1>Sổ địa chỉ nhận hàng</h1>
+                <button class="add-address">Thêm sổ địa chỉ mới</button>
+                <div class="address-order-list">
+                  <div class="address-order-item default">
+                    <div class="address-order-item--left">
+                      <div class="address-order-item__user">
+                        Bính Lê Huy
+                        <span class="address-order-item__default"><img src="./images/icon-map-green.svg">Mặc định</span>
+                      </div>
+                      <div class="address-order-item__phone">
+                        Số điện thoại: <span>0962.180.180</span>
+                      </div>
+                      <div class="address-order-item__info">
+                        Địa chỉ: <span>Số 14 Pháo Đài Láng, Láng Thượng, Đống Đa, Hà Nội</span>
+                      </div>
+                      <div class="address-order-item__type">
+                        Loại địa chỉ: <span>Cơ quan / Công ty</span>
+                      </div>
                     </div>
-                    <div class="changepass-item required">
-                      <label>Mật khẩu mới</label>
-                      <input type="password" id="user_pass" class="input password-input" value="" placeholder="Nhập mật khẩu mới">
-                      <button type="button" class="hide-pass"></button>
+                    <div class="address-order-item--right">
+                      <a href="">Chỉnh sửa</a>
+                      <a href="">Xoá</a>
+                      <button class="set-default">Đặt làm mặc định</button>
                     </div>
-                    <div class="changepass-item required">
-                      <label>Xác nhận mật khẩu mới</label>
-                      <input type="password" id="user_pass" class="input password-input" value="" placeholder="Nhập lại mật khẩu mới">
-                      <button type="button" class="hide-pass"></button>
+                  </div>
+                  <div class="address-order-item">
+                    <div class="address-order-item--left">
+                      <div class="address-order-item__user">
+                        Bính Lê Huy
+                      </div>
+                      <div class="address-order-item__phone">
+                        Số điện thoại: <span>0962.180.180</span>
+                      </div>
+                      <div class="address-order-item__info">
+                        Địa chỉ: <span>Số 224 đường Láng, Thịnh Quang, Đống Đa, Hà Nội</span>
+                      </div>
+                      <div class="address-order-item__type">
+                        Loại địa chỉ: <span>Nhà riêng / Chung cư</span>
+                      </div>
+                    </div>
+                    <div class="address-order-item--right">
+                      <a href="">Chỉnh sửa</a>
+                      <a href="">Xoá</a>
+                      <button class="set-default">Đặt làm mặc định</button>
                     </div>
 
-                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalchangepass">
-                      Xác nhận
-                    </button>
-                
-                  </form>
-                </div>
-                <div class="modal fade modal-popup modal-changepass" tabindex="-1" role="dialog" id="modalchangepass"aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <img src="./images/icon-check-green.svg" alt="">
-                        <p>Đổi mật khẩu thành công!!</p>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                      </div>
-                      
-                    </div>
+                    
                   </div>
                 </div>
               </div>
-
             </div>
            </div>     
         </div>
