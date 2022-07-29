@@ -8,6 +8,11 @@
 .checkout-page{
     .purchase-step{
         margin-bottom: 2rem;
+        a{
+            color: $primary-color;
+            @include font-size(1.6,2.2);
+            font-weight: 600;
+        }
         &::after{
             width: calc(100% - 3rem);
         }

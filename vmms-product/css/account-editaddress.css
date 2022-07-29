@@ -386,6 +386,9 @@ a:hover {
   padding: 0 !important;
   background: rgba(43, 43, 43, 0.7);
 }
+.modal-open .modal .modal-body {
+  padding: 0;
+}
 .modal-open .modal .modal-dialog {
   top: 50%;
   transform: translateY(-50%);
