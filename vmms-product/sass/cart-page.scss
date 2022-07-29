@@ -22,7 +22,7 @@
       position: relative;
       padding: 2rem 0;
       border-top: 1px solid #cccccc;
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         gap: 1rem 0;
         justify-content: space-between;
       }
@@ -36,10 +36,8 @@
           @include font-size(1.6, 2.2);
           color: #000000;
         }
-        
-
       }
-      .product-check{
+      .product-check {
         margin-bottom: 2.5rem;
       }
       &:last-of-type {
@@ -80,8 +78,7 @@
         width: 12.2rem;
         flex-shrink: 0;
         overflow: hidden;
-        @include media-breakpoint-down(sm){
-        
+        @include media-breakpoint-down(sm) {
         }
         .quantity {
           display: flex;
@@ -90,7 +87,7 @@
           background: #f5f5f5;
           border-radius: 0.6rem;
           height: 4rem;
-          @include media-breakpoint-down(sm){
+          @include media-breakpoint-down(sm) {
             height: 3rem;
           }
 
@@ -127,9 +124,9 @@
       .product-info {
         padding: 0 1rem;
         flex: 1;
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
           width: calc(100% - 11rem);
-          flex:unset
+          flex: unset;
         }
         &__name {
           @include font-size(1.4, 1.9);
@@ -181,6 +178,7 @@
           justify-content: center;
           font-size: 1.4rem;
           border-radius: 2px;
+         
         }
       }
       input:checked ~ .checked::after {
@@ -188,140 +186,139 @@
       }
     }
   }
-  .cart-sidebar{
-    background: #EDEDED;
+  .cart-sidebar {
+    background: #ededed;
     padding: 2rem;
     border-radius: 1rem;
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       margin-top: 3rem;
     }
-    .cart-coupon{
+    .cart-coupon {
       margin-bottom: 2.3rem;
-      form{
+      form {
         display: flex;
         border-radius: 6px;
         overflow: hidden;
       }
-      &__apply{
-        @include font-size(1.6,2.2);
+      &__apply {
+        @include font-size(1.6, 2.2);
         background: $primary-color;
         padding: 0.9rem 1.1rem;
         border: 0;
         outline: none !important;
-        color:#fff;
-        border-radius:0 6px 6px 0;
+        color: #fff;
+        border-radius: 0 6px 6px 0;
         flex-shrink: 0;
         width: 8.6rem;
       }
-      &__code{
-      @include font-size(1.4,1.9);
-      flex: 1;
-      padding: 1rem 0 1rem 2rem ;
-      border: 0;
-      outline: none !important;
+      &__code {
+        @include font-size(1.4, 1.9);
+        flex: 1;
+        padding: 1rem 0 1rem 2rem;
+        border: 0;
+        outline: none !important;
       }
     }
-    .cart-total{
-      &-item{
+    .cart-total {
+      &-item {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        span:first-of-type{
-          @include font-size(1.4,1.9);
+        span:first-of-type {
+          @include font-size(1.4, 1.9);
         }
-        span:nth-of-type(2){
-          @include font-size(1.6,2.2);
+        span:nth-of-type(2) {
+          @include font-size(1.6, 2.2);
         }
-        &:first-of-type{
+        &:first-of-type {
           padding-bottom: 1.3rem;
-          span.price{
-            color: #CB1515;
+          span.price {
+            color: #cb1515;
           }
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
           padding-bottom: 2rem;
-          border-bottom: 1px solid #CCCCCC;
-          span.price{
-            color: #169E30;
+          border-bottom: 1px solid #cccccc;
+          span.price {
+            color: #169e30;
           }
         }
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
           padding-top: 2rem;
           margin-bottom: 3rem;
-          span:first-of-type{
-            @include font-size(1.6,2.2);
+          span:first-of-type {
+            @include font-size(1.6, 2.2);
             font-weight: 600;
             color: #000000;
           }
-          span.price{
-            @include font-size(2.4,3.3);
+          span.price {
+            @include font-size(2.4, 3.3);
             font-weight: 600;
-            color: #CB1515;
+            color: #cb1515;
           }
-          span.note{
+          span.note {
             width: 100%;
             text-align: right;
             margin-top: 0.5rem;
-            @include font-size(1.4,1.9);
+            @include font-size(1.4, 1.9);
           }
         }
       }
     }
-    .to-checkout{
+    .to-checkout {
       width: 100%;
-      @include font-size(1.6,2.2);
+      @include font-size(1.6, 2.2);
       font-weight: 600;
-      color:#fff;
+      color: #fff;
       text-align: center;
       border: 0;
       outline: none !important;
       background: $primary-color;
       padding: 1.1rem 0;
-      border-radius: .6rem;
-      transition: all .3s;
-      &:hover{
-        opacity: .8;
+      border-radius: 0.6rem;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
 }
 .modal-open .modal {
-
-  .modal-content{
+  .modal-content {
     border-radius: 1rem;
-    padding:3rem 2rem 2rem;
+    padding: 3rem 2rem 2rem;
     max-width: 40rem;
     margin: 0 auto;
-    &::before{
+    &::before {
       content: "";
-      width:0px;
-      height:0px;
-      border-left:1rem solid transparent;
-      border-right:1rem solid transparent;
-      border-bottom:1.5rem solid #fff;
+      width: 0px;
+      height: 0px;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-bottom: 1.5rem solid #fff;
       display: inline-block;
       position: absolute;
       top: -1.5rem;
       right: 6.4rem;
     }
   }
-  .modal-body{
+  .modal-body {
     padding: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    img{
+    img {
       @include box(3rem);
       display: block;
       margin: 0 auto 2rem;
     }
-    p{
+    p {
       text-align: center;
-      @include font-size(1.6,2.2);
+      @include font-size(1.6, 2.2);
       color: #000000;
       margin-bottom: 1rem;
     }
-    button{
+    button {
       background: $primary-color;
       border-radius: 6px;
       border: none;

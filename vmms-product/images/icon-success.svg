@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1968" data-name="Rectangle 1968" width="16" height="16" transform="translate(1063 375)" fill="#3a9a2f" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_442" data-name="Mask Group 442" transform="translate(-1063 -375)" clip-path="url(#clip-path)">
+    <g id="download_9_" data-name="download (9)" transform="translate(1063 378.266)">
+      <path id="Path_1099" data-name="Path 1099" d="M11.406.094a3.845,3.845,0,0,1,2.583,2.25H11.406ZM3.3,2.437a.412.412,0,0,1,.469.437.469.469,0,0,1-.467.469H.469a.469.469,0,0,0,0,.937H4.687a.469.469,0,1,1,0,.937H.469a.469.469,0,0,0,0,.938H1.5V7.562a.469.469,0,0,0,.469.469h.942a1.8,1.8,0,0,0,3.522,0h4.76a1.8,1.8,0,0,0,3.522,0h.817A.469.469,0,0,0,16,7.562V4.75a1.513,1.513,0,0,0-1.452-1.469h-3.61a.469.469,0,0,1-.469-.469V0h-8.5A.469.469,0,0,0,1.5.469V1.5H.938a.469.469,0,1,0,0,.937ZM13.561,7.064a.859.859,0,1,1-1.467.608A.86.86,0,0,1,13.561,7.064Zm-8.281,0a.859.859,0,1,1-1.467.608A.86.86,0,0,1,5.28,7.064Zm0,0" transform="translate(0 0)" fill="#3a9a2f" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
