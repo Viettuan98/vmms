@@ -642,14 +642,14 @@
   }
 }
 .modal-signin {
-  .modal-body{
+  .modal-body {
     padding: 0;
     position: unset;
   }
   .modal-content {
     padding: 3rem;
     border-radius: 1rem;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       padding: 1.5rem;
     }
     .modal-body {
@@ -667,37 +667,35 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      &:first-of-type{
+      &:first-of-type {
         margin-bottom: 2rem;
       }
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         margin-bottom: 1rem;
       }
-      &:nth-of-type(3){
+      &:nth-of-type(3) {
         flex-direction: row;
         justify-content: space-between;
-        .save-account{
+        .save-account {
           display: flex;
           align-items: center;
           color: #000000;
-          &-label{
+          &-label {
             @include box(1.4rem);
-            margin-right: .6rem;
-            @include font-size(1.4,1.9);
+            margin-right: 0.8rem;
+            @include font-size(1.4, 1.9);
             margin-bottom: 0;
           }
-          input{
+          input {
             @include box(1.4rem);
-           
           }
         }
-        .forgot-password{
-          @include font-size(1.4,1.9);
+        .forgot-password {
+          @include font-size(1.4, 1.9);
           font-weight: 600;
           text-decoration: underline;
-          color:#000;
+          color: #000;
         }
-        
       }
       label {
         @include font-size(1.4, 1.9);
@@ -725,11 +723,54 @@
         }
       }
     }
-    .btn{
+    .save-account-label {
+      position: relative;
+      border-radius: 2px;
+      @include box(1.6rem);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0 ;
+        width: 0;
+      }
+      .checked {
+        @include box(1.6rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #d29e10;
+        border-radius: 2px;
+        background: #fff;
+        &::after {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Pro";
+          background: #dd9825;
+          color: #fff;
+          font-weight: 400;
+          @include box(100%);
+          position: absolute;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          border-radius: 2px;
+        }
+      }
+      input:checked ~ .checked::after {
+        display: flex !important;
+      }
+    }
+
+    .btn {
       width: 100%;
       margin: 3rem 0 2rem;
     }
-    .hide-pass{
+    .hide-pass {
       position: absolute;
       @include box(1.4rem);
       right: 2rem;
@@ -739,18 +780,18 @@
       background: #fff url(../images/icon-hide-eye.svg) no-repeat center;
       background-size: contain;
     }
-    .to-singin{
-      @include font-size(1.4,1.9);
+    .to-singin {
+      @include font-size(1.4, 1.9);
       text-align: center;
-      a{
-        @include font-size(1.4,1.9);
+      a {
+        @include font-size(1.4, 1.9);
         font-weight: 600;
         text-decoration: underline;
-        color:#000;
+        color: #000;
       }
     }
   }
-  button.close{
+  button.close {
     @include box(3.2rem);
     display: inline-block;
     background: url(../images/icon-close-gray.svg) no-repeat center;
@@ -759,7 +800,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    span{
+    span {
       display: none;
     }
   }

@@ -246,7 +246,8 @@
                         <ol class="breadcrumb-list">
                         <li class="breadcrumb-item"><a href="/index.html">Trang chủ</a></li>
                         <li class="breadcrumb-item"><a href="/cart-page.html">Tài khoản</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Sổ địa chỉ nhận hàng</li>
+                        <li class="breadcrumb-item"><a href="/cart-page.html">Sổ địa chỉ nhận hàng</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Chỉnh sửa địa chỉ</li>
                         </ol>
                     </nav>
                 </div>
@@ -310,54 +311,83 @@
           </div>
             <div class="col-sm-12 col-md-12 col-lg-9">
               <div class="account-address">
-                <h1>Sổ địa chỉ nhận hàng</h1>
-                <button class="add-address">Thêm sổ địa chỉ mới</button>
-                <div class="address-order-list">
-                  <div class="address-order-item default">
-                    <div class="address-order-item--left">
-                      <div class="address-order-item__user">
-                        Bính Lê Huy
-                        <span class="address-order-item__default"><img src="./images/icon-map-green.svg">Mặc định</span>
+                <h1>Chỉnh sửa địa chỉ</h1>
+                <div class="change-address">
+                  <form name="change-address-form" class="change-address-form" method="post" onsubmit="return false">
+                    <div class="change-address-item required">
+                      <label >Họ tên</label>
+                      <input type="text" id="user_pass" class="input" value="Bính Lê Huy" placeholder="Nhập họ tên">
+                    </div>
+                    <div class="change-address-item required">
+                      <label>Số điện thoại</label>
+                      <input type="text" id="user_pass" class="input" value="0962180180" placeholder="Nhập số điện thoại">
+                     
+                    </div>
+                    <div class="change-address-item required">
+                      <label>Tỉnh/Thành phố</label>
+                      <select class="form-control">
+                        <option>Hà Nội</option>
+                        <option>Sài gòn</option>
+                        <option>Bắc Ninh</option>
+                        <option>Bắc Giang</option>
+                        <option>Hải Phòng</option>
+                      </select>
+                    </div>
+                    <div class="change-address-item required">
+                      <label>Quận/Huyện</label>
+                      <select class="form-control">
+                        <option>Đống Đa</option>
+                        <option>Hai Bà Trưng</option>
+                        <option>Thanh Xuân</option>
+                        <option>Nam Từ Liêm</option>
+                        <option>Bắc Từ Liêm</option>
+                      </select>
+                    </div>
+                    <div class="change-address-item required">
+                      <label>Phường/Xã</label>
+                      <select class="form-control">
+                        <option>Láng Thượng</option>
+                        <option>Láng hạ</option>
+                        <option>Thái Hà</option>
+                      </select>
+                    </div>
+                    <div class="change-address-item required">
+                      <label >Địa chỉ cụ thể</label>
+                      <input type="text" id="user_pass" class="input password-input" value="14 Pháo Đài Láng" placeholder="Nhập địa chỉ">
+                    </div>
+                    <div class="change-address-item required">
+                      <label>Loại địa chỉ</label>
+                      <div class="form-check">
+                        <label class="radio-check"> Nhà riêng / Chung cư
+                          <input type="radio" checked="checked" name="radio">
+                          <span class="checkmark"></span>
+                        </label>
                       </div>
-                      <div class="address-order-item__phone">
-                        Số điện thoại: <span>0962.180.180</span>
-                      </div>
-                      <div class="address-order-item__info">
-                        Địa chỉ: <span>Số 14 Pháo Đài Láng, Láng Thượng, Đống Đa, Hà Nội</span>
-                      </div>
-                      <div class="address-order-item__type">
-                        Loại địa chỉ: <span>Cơ quan / Công ty</span>
+                      <div class="form-check">
+                        <label class="radio-check"> Cơ quan / Công ty
+                          <input type="radio" name="radio">
+                          <span class="checkmark"></span>
+                        </label>
                       </div>
                     </div>
-                    <div class="address-order-item--right">
-                      <a href="">Chỉnh sửa</a>
-                      <a href="">Xoá</a>
-                      <button class="set-default">Đặt làm mặc định</button>
+                    <div class="change-address-item">
+                     <div class="set-default">
+                        <label class="set-default-label">
+                          <input type="checkbox">
+                          <span class="checked"></span>
+                        </label>
+                        Đặt làm địa chỉ mặc định
+                      </div>
                     </div>
+                    <div class="change-address-item">
+                    <button type="submit" class="btn btn-cancel">
+                      Huỷ
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-submit disabled" data-toggle="modal" data-target="#modalchangepass">
+                      Cập nhật
+                    </button>
                   </div>
-                  <div class="address-order-item">
-                    <div class="address-order-item--left">
-                      <div class="address-order-item__user">
-                        Bính Lê Huy
-                      </div>
-                      <div class="address-order-item__phone">
-                        Số điện thoại: <span>0962.180.180</span>
-                      </div>
-                      <div class="address-order-item__info">
-                        Địa chỉ: <span>Số 224 đường Láng, Thịnh Quang, Đống Đa, Hà Nội</span>
-                      </div>
-                      <div class="address-order-item__type">
-                        Loại địa chỉ: <span>Nhà riêng / Chung cư</span>
-                      </div>
-                    </div>
-                    <div class="address-order-item--right">
-                      <a href="">Chỉnh sửa</a>
-                      <a href="">Xoá</a>
-                      <button class="set-default">Đặt làm mặc định</button>
-                    </div>
-
-                    
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

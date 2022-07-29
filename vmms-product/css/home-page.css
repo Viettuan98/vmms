@@ -1137,7 +1137,7 @@ a:hover {
 .modal-signin .signupform-item:nth-of-type(3) .save-account-label {
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 0.6rem;
+  margin-right: 0.8rem;
   font-size: 1.4rem;
   line-height: 1.9rem;
   margin-bottom: 0;
@@ -1176,6 +1176,51 @@ a:hover {
 }
 .modal-signin .signupform-item input::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.2509803922);
+}
+.modal-signin .signupform .save-account-label {
+  position: relative;
+  border-radius: 2px;
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modal-signin .signupform .save-account-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.modal-signin .signupform .save-account-label .checked {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #d29e10;
+  border-radius: 2px;
+  background: #fff;
+}
+.modal-signin .signupform .save-account-label .checked::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  background: #dd9825;
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border-radius: 2px;
+}
+.modal-signin .signupform .save-account-label input:checked ~ .checked::after {
+  display: flex !important;
 }
 .modal-signin .signupform .btn {
   width: 100%;
