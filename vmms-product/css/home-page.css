@@ -1248,6 +1248,7 @@ a:hover {
   font-weight: 600;
   text-decoration: underline;
   color: #000;
+  padding-left: 1rem;
 }
 .modal-signin button.close {
   width: 3.2rem;
