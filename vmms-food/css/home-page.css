@@ -1255,19 +1255,18 @@ a:hover {
   transform: translateX(-50%);
 }
 .home-page .food-home .food-list .box-food {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
   margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
+}
+.home-page .food-home .food-list .box-food a {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
   font-size: 1.8rem;
   line-height: 2.4rem;
-}
-@media (max-width: 767.98px) {
-  .home-page .food-home .food-list .box-food {
-    margin-bottom: 1.4rem;
-  }
+  position: relative;
+  overflow: hidden;
 }
 .home-page .food-home .food-list .box-food__name {
   font-weight: 600;
@@ -1302,7 +1301,6 @@ a:hover {
   margin-top: 1rem;
   font-style: italic;
   z-index: 2;
-  background: #fff;
   color: #484848;
 }
 @media (max-width: 767.98px) {
@@ -1313,11 +1311,12 @@ a:hover {
   }
 }
 .home-page .food-home .food-list .box-food::before {
-  content: "........................................................";
-  width: 100%;
+  content: "....................................................";
+  width: calc(100% - 2rem);
   letter-spacing: 0.9rem;
   color: #000;
   position: absolute;
+  overflow: hidden;
 }
 .home-page .introduce-home {
   position: relative;

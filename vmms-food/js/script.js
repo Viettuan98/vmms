@@ -26,7 +26,7 @@ $(document).ready(function () {
         $('.header').removeClass('stuck');
       }
     });
-    $('.header-logo .menu-search').click(function (e) {
+    $('.header .menu-search').click(function (e) {
       $('.menu-search form').toggleClass('active');
     });
   }
