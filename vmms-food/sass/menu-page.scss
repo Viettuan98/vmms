@@ -36,11 +36,20 @@
       left: 50%;
       bottom: 33.283%;
       transform: translateX(-50%);
+      @include media-breakpoint-down(sm){
+        
+        top:50%;
+        bottom: unset;
+        transform: translate(-50%,-50%);
+      }
     }
     .page-title{
       @include font(4.8,6.5,600);
       color:#fff;
       margin-bottom: 1rem;
+      @include media-breakpoint-down(sm){
+        @include font(2.4,3.3,600);
+      }
     }
   }
   .form-consultation {
@@ -76,8 +85,6 @@
           padding: 0.5rem 1rem;
           font-size: 1.4rem;
           width: 100%;
-          
-
         }
         input[type='submit'] {
           width: fit-content;
