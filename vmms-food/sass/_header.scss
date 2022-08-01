@@ -21,7 +21,7 @@
       color: #000;
     }
     padding: 2rem 0 0.5rem;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(md){
       padding: 0;
     }
   }
