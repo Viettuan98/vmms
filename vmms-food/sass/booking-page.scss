@@ -1,0 +1,39 @@
+// sass ./sass/booking-page.scss ./css/booking-page.css --watch
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "global";
+@import "header-page";
+@import "footer";
+.booking-page{
+    .booking{
+        padding: 8rem 0;
+        background: url(../images/bg-booking.jpg) no-repeat center;
+        background-size: cover;
+        &-form{
+            max-width: 76.8rem;
+            width: 100%;
+            border-radius: 2rem;
+            background: #fff;
+            margin: 0 auto;
+            padding: 5rem;
+            &-heading {
+                @include section-heading;
+                text-align: center;
+                margin-bottom: 3rem;
+                @include media-breakpoint-down(sm) {
+                  margin-bottom: 2rem;
+                }
+                &::after {
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+              }
+            &-item{
+                display: flex;
+                flex-flow: row wrap;
+                position: relative;
+            }
+        }
+    }
+}
