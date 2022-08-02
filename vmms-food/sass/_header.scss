@@ -47,6 +47,9 @@
         @include media-breakpoint-down(lg) {
           gap: 0 2rem;
         }
+        &-item{
+          position: relative;
+        }
         &-item.active .menu-link {
           color: $primary-color;
           &::before {
@@ -89,6 +92,88 @@
             color: $primary-color;
           }
         }
+        .menu-lang{
+          &:hover{
+            .sub-menu-lang{
+              opacity: 1;
+              visibility: visible;
+            }   
+          }
+          .sub-menu-lang{
+            position: absolute;
+            width: 8.6rem;
+            background: #fff;
+            box-shadow: 0px 3px 6px #00000029;
+            padding: 0.5rem;
+            border-radius: 0 0 0.4rem 0.4rem;
+            border-top: 2px solid #F2B94C;
+            top: calc(100% + .5rem);
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s linear;
+            a{
+              @include font(1.2,1.7);
+              padding: .5rem 1rem;
+              border-radius: 2px;
+              display: inline-block;
+              color: #000000;
+              & + a{
+                margin-top: .5rem;
+              }
+              &.active{
+                background: $primary-color;
+              }
+            }
+          }
+        }
+      }
+      .search-header{
+        position: absolute;
+        right: 0rem;
+        top: 3.2rem;
+        display: flex;
+        height: 5rem;
+        box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+        border: 5px solid #f2b94c;
+        border-radius: 2px;
+        transition: all 0.2s linear;
+        width: 25rem;
+        opacity: 0;
+        visibility: hidden;
+        &.active{
+          opacity: 1;
+          visibility: visible;
+        }
+        &::before{
+          content: "";
+          width: 0px;
+          height: 0px;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-bottom: 7px solid #f2b94c;
+          position: absolute;
+          right: 0.2rem;
+          top: -11px;
+        }
+        input{
+          border: none;
+          border-radius: 2px 0 0 2px;
+          padding: 1rem;
+          color: #000;
+          background: #fff;
+          outline: none !important;
+          @include font(1.4,1.9);
+          color: #000000;
+          flex:1;
+        }
+        button{
+          background: #fff;
+          border: none;
+          border-radius: 0 2px 2px 0;
+          padding-right: 1rem;
+          outline: none !important;
+        }
       }
     }
     &--bottom {
@@ -127,12 +212,12 @@
       }
     }
     .menu-search {
+      position: relative;
+      z-index: 2;
       @include media-breakpoint-up(lg) {
         display: none;
       }
       @include media-breakpoint-down(md) {
-        position: relative;
-        z-index: 2;
         form {
           position: absolute;
           right: 0rem;

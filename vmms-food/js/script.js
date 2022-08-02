@@ -55,5 +55,8 @@ $(document).ready(function () {
         $(this).removeClass('toggle');
       }
     );
+    $('.header .icon-search').click(function (e) {
+      $('.search-header').toggleClass('active');
+    });
   }
 });

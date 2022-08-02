@@ -92,3 +92,14 @@ a:hover {
     }
   }
 }
+.modal-open .modal {
+  padding: 0 !important;
+  background: rgb(43 43 43 / 70%);
+  .modal-body{
+    padding: 0;
+  }
+  .modal-dialog{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
