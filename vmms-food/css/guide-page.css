@@ -1191,5 +1191,32 @@ a:hover {
     padding: 3rem 0;
   }
 }
+.guide-page .page-content h2 {
+  font-size: 3rem;
+  line-height: 4.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2rem;
+}
+.guide-page .page-content h3 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2rem;
+}
+.guide-page .page-content img {
+  display: block;
+  margin-bottom: 2rem;
+}
+.guide-page .page-content p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+  color: #707070;
+}
+.guide-page .page-content p strong {
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=guide-page.css.map */
