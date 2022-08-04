@@ -117,7 +117,7 @@
     .food-list {
       position: absolute;
       width: 67rem;
-      right: 0;
+      right: 1.5rem;
       top: -5rem;
       background-color: $white;
       padding: 3rem;
@@ -174,7 +174,7 @@
         margin-top: 2rem;
       }
       @include media-breakpoint-down(md) {
-        height: 25.5rem;
+          height: 25.5rem;
       }
     }
   }
@@ -242,6 +242,10 @@
   }
   .customer-review {
     background: rgb(239 239 239 / 60%);
+    &-list{
+      max-width: 77rem;
+      margin: 0 auto;
+    }
     &__heading {
       @include section-heading;
       text-align: center;
@@ -303,7 +307,7 @@
       }
     }
     &-list {
-      @include owl(3rem);
+      @include owl(-4.1rem);
       & .owl-dots {
         position: absolute;
         left: 50%;

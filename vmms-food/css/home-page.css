@@ -1291,7 +1291,7 @@ a:hover {
 .home-page .food-home .food-list {
   position: absolute;
   width: 67rem;
-  right: 0;
+  right: 1.5rem;
   top: -5rem;
   background-color: #fff;
   padding: 3rem;
@@ -1587,6 +1587,10 @@ a:hover {
 .home-page .customer-review {
   background: rgba(239, 239, 239, 0.6);
 }
+.home-page .customer-review-list {
+  max-width: 77rem;
+  margin: 0 auto;
+}
 .home-page .customer-review__heading {
   font-size: 3rem;
   line-height: 4.1rem;
@@ -1683,7 +1687,7 @@ a:hover {
 .home-page .customer-review-list.owl-carousel .owl-nav button.owl-prev {
   background: transparent;
   border: 0;
-  left: 3rem;
+  left: -4.1rem;
   transition: all 0.5s;
   position: absolute;
   top: 50%;
@@ -1697,7 +1701,7 @@ a:hover {
 .home-page .customer-review-list.owl-carousel .owl-nav button.owl-next {
   background: transparent;
   border: 0;
-  right: 3rem;
+  right: -4.1rem;
   transition: all 0.5s;
   position: absolute;
   top: 50%;

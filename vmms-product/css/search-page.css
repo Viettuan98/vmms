@@ -1896,6 +1896,18 @@ a:hover {
   color: #707070;
   display: block;
 }
+.search-page .search__reset {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  background: url(../images/icon-reset.svg) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 .search-page .search__button {
   border: none;
   position: absolute;

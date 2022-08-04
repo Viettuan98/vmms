@@ -78,6 +78,17 @@
         display: block;
         }
     }
+    &__reset{
+      @include box(1.4rem);
+      display: inline-block;
+      background: url(../images/icon-reset.svg) no-repeat center;
+      background-size: contain;
+      position: absolute;
+      right: 8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
     &__button {
       border: none;
       position: absolute;

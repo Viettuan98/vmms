@@ -1808,14 +1808,21 @@ a:hover {
   line-height: 1.9rem;
   color: #000000;
 }
+.change-address .change-address-item input .input-name {
+  padding-right: 3rem;
+}
 .change-address .change-address-item select {
   height: 4rem;
   background: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 6px;
+  padding: 1rem 3rem 1rem 1.8rem;
   font-size: 1.4rem;
   line-height: 1.9rem;
   color: #000000;
+}
+.change-address .change-address-item select option {
+  padding-left: 0;
 }
 .change-address .change-address-item .btn-submit.disabled {
   background: #d9d9d9;
@@ -1861,14 +1868,16 @@ a:hover {
   background: #dd9825;
   color: #fff;
   font-weight: 400;
-  width: 100%;
-  height: 100%;
+  width: 1.6rem;
+  height: 1.6rem;
   position: absolute;
   display: none;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
   border-radius: 2px;
+  top: -1px;
+  left: 0px;
 }
 .change-address .change-address-item .set-default-label input:checked ~ .checked::after {
   display: flex !important;
