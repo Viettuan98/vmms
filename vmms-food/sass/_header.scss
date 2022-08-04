@@ -302,7 +302,7 @@
     background: $black;
     height: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     .menu {
       padding: 0 1.2rem;

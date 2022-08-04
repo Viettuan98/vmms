@@ -660,7 +660,7 @@ a:hover {
   background: #000;
   height: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
 }
 .mobile-sidebar--bottom .menu {
