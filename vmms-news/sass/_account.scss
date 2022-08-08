@@ -1,0 +1,133 @@
+.account-page{
+    .icon{
+        font-size: 1.4rem;
+        @include box(1.4rem);
+        display: inline-flex;
+        align-items: flex-start;
+        background-size: contain;
+        background-position:center;
+        background-repeat: no-repeat;
+        position: absolute;
+        font-weight: 700;
+        top: 1.3rem;
+        left: 2rem;
+        color:#B2B2B2;
+        &::before{
+            display: inline-block;
+        }
+    }
+    .icon-user{
+        &::before{@include fa5("\f007");}
+    }
+    .icon-addr{
+        &::before{@include fa5("\f3c5");}
+    }
+    .icon-pass{
+        &::before{@include fa5("\f30d");}
+    }
+    .icon-history{
+        background-image: url(../images/icon-history-gray.svg);
+    }
+    .icon-pay{
+        background-image: url(../images/icon-pay-gray.svg);
+    }
+    .icon-logout{
+        background-image: url(../images/icon-logout-gray.svg);
+    } 
+    .account-sidebar{
+        background: #EDEDED;
+        border-radius: .6rem;
+        .account-user{
+            padding: 2rem 2rem 0;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            &__avatar{
+                flex-shrink: 0;
+                position: relative;
+                img{
+                    border-radius:50%;
+                    @include box(7.8rem);
+                    object-fit: cover;
+                    overflow: hidden;
+                }
+                .btn-update-image{
+                    @include box(2.4rem);
+                    position: absolute;
+                    bottom: -1rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #fff;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    &::before{
+                        @include fa5("\f030");
+                        color:$primary-color;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+            &-info{
+                padding-left: 1rem;
+                flex:1
+            }
+            &__name{
+                @include font-size(1.6,2.2);
+                font-weight: bold;
+                color:#000;
+                margin-bottom: 0.5rem;
+            }
+            &__email{
+                @include font-size(1.2,1.6);
+            }
+        }
+        @include media-breakpoint-down(md){
+            margin-bottom: 2rem;
+        }
+    }
+    .account-wrapper{
+        margin-bottom: 8.2rem;
+    }
+    .account-nav{
+        .menu{
+            &-link{
+                position: relative;
+                display: block;
+                padding: 1.1rem 1rem 1rem 4.4rem;
+                @include font-size(1.4,1.9);
+                color:#000;
+                &:hover,
+                &.active{
+                    background: $primary-color;
+                    color:#fff;
+                    .icon{
+                        color:#fff;
+                    }
+                    .icon-history{
+                        background-image: url(../images/icon-history-white.svg);
+                    }
+                    .icon-pay{
+                        background-image: url(../images/icon-pay-white.svg);
+                    }
+                    .icon-logout{
+                        background-image: url(../images/icon-logout-white.svg);
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        @include font-size(2.4,3.3);
+        font-weight: 600;
+        color:#000;
+        margin-bottom: 3rem;
+        @include media-breakpoint-down(md){
+            @include font-size(2,2.8);
+        }
+    }
+}
