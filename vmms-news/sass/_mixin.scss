@@ -44,6 +44,11 @@
   clip-path: polygon(25px 0, 100% 0, calc(100% - 25px) 100%, 0% 100%);
   background: transparent linear-gradient(180deg, #f8255e 0%, #830008 100%) 0%
     0% no-repeat padding-box;
+  @include media-breakpoint-down(sm){
+    @include font(1.8, 2.4);
+    padding: 1.2rem 4.7rem 1.2rem 4.7rem;
+    min-width: 20.7rem;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -185,14 +190,20 @@ $grid-breakpoints: (
     }
     .owl-nav button.owl-prev {
       left: $leftright;
+      @include media-breakpoint-down(lg) {
+        left: -3rem;
+      }
       @include media-breakpoint-down(md) {
-        left: -0.5rem;
+        left: 1.5rem;
       }
     }
     .owl-nav button.owl-next {
       right: $leftright;
+      @include media-breakpoint-down(lg) {
+        right: -3rem;
+      }
       @include media-breakpoint-down(md) {
-        right: -0.5rem;
+        right: 1.5rem;
       }
     }
     .owl-nav button.owl-prev,
@@ -227,7 +238,7 @@ $grid-breakpoints: (
 @mixin img-cover($height) {
   &.image-cover {
     position: relative;
-    height: auto;
+    height: 0;
     margin: 0 auto;
     overflow: hidden;
     padding-top: $height;

@@ -19,7 +19,7 @@
     height: 8.4rem;
     background: #fff;
     @include media-breakpoint-down(md) {
-      height: 11.1rem;
+      height: 6.1rem;
     }
     &--left {
       @include media-breakpoint-up(md) {
@@ -31,41 +31,16 @@
         .menu-bars {
           color: $black;
         }
-        .header-cart-mobi {
-          display: flex;
-          align-items: center;
-          .cart-icon {
-            i {
-              @include box(2.4rem);
-              flex-shrink: 0;
-              font-size: 2.4rem;
-              color: #000;
-              display: inline-flex;
-              align-items: flex-end;
-            }
-            .cart-qty {
-              @include box(1rem, 1rem);
-              @include font-size(0.8, 1);
-              text-align: center;
-              color: #fff;
-              border-radius: 50%;
-              position: absolute;
-              top: 0;
-              right: 0;
-              background: #dc0808;
-              @include media-breakpoint-down(md) {
-                top: -2px;
-                right: -3px;
-              }
-            }
-          }
-        }
+       
       }
     }
     &--right {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      @include media-breakpoint-down(md){
+        display: none;
+      }
       .search-form {
         flex: 1;
         width: 100%;
@@ -135,7 +110,7 @@
     display: flex;
     align-items: center;
     @include media-breakpoint-down(md) {
-      display: none;
+      
     }
 
     .header-nav {
@@ -148,14 +123,24 @@
         height: 100%;
         @include media-breakpoint-down(lg) {
           gap: 0 2rem;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+        @include media-breakpoint-down(md){
+          gap: 0 0.5rem;
         }
         &-home {
           margin-right: 1rem;
+          
           a {
             display: inline-block;
             @include box(3.5rem);
             background: #000;
             border-radius: 50%;
+            @include media-breakpoint-down(md){
+              @include box(2.4rem);
+              
+            }
             &::before {
               content: '';
               background: url(../images/icon-home.svg) no-repeat center;
@@ -191,6 +176,9 @@
             font-weight: 600;
             position: relative;
             transition: all 0.3s linear;
+            @include media-breakpoint-down(md){
+              padding: 0 1.2rem 0 .5rem;
+            }
           }
         }
         
@@ -209,9 +197,9 @@
     @include media-breakpoint-down(md) {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1rem;
+      justify-content: center;
       height: 4rem;
+      position: relative;
       .logo {
         height: 4rem;
       }
@@ -222,6 +210,10 @@
     font-size: 2rem;
     @include media-breakpoint-up(lg) {
       display: none;
+    }
+    @include media-breakpoint-down(md){
+      position: absolute;
+      left: 1.5rem;
     }
   }
 }

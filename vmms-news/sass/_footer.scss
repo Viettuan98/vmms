@@ -4,18 +4,36 @@
     padding: 3rem 0 2rem;
     .container {
       display: flex;
+      flex-flow: row wrap;
       .col-menu {
         flex: 1;
         display: flex;
         justify-content: space-between;
         padding-right: 6.3rem;
         border-right: 1px solid #e5e5e5;
+        @include media-breakpoint-down(lg) {
+          padding-right: 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          flex: unset;
+          border-right: none;
+          padding-right: 0;
+        }
       }
       .col-download {
         width: 47%;
         max-width: 46.4rem;
         flex-shrink: 0;
         padding-left: 6.4rem;
+        @include media-breakpoint-down(lg) {
+          padding-left: 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          padding-left: 0;
+          margin: 0 auto;
+        }
       }
       .download-app {
         &-title {
@@ -47,6 +65,13 @@
       display: flex;
       flex-flow: row wrap;
       gap: 3rem 12rem;
+      @include media-breakpoint-down(lg) {
+        padding-left: 3rem;
+        gap: 3rem 10rem;
+      }
+      @include media-breakpoint-down(md){
+        padding-left: 1.5rem;
+      }
       &-item {
         width: calc(50% - 6rem);
       }
@@ -54,26 +79,46 @@
         @include font(2, 2.7, 600);
         color: #000000;
         margin-bottom: 1.5rem;
-        &.text-blue{
-          color: #0077FF;
+        &.text-blue {
+          color: #0077ff;
         }
       }
-      &-content{
-        p{
+      &-content {
+        p {
           @include font(1.4, 2.2);
-          color: #1A1A1A;
-          span{
+          color: #1a1a1a;
+          position: relative;
+          span {
             font-weight: 600;
           }
-          a{
-            color: #0077FF;
+          a {
+            color: #0077ff;
           }
-          &+p{
+          & + p {
             padding-top: 1rem;
           }
         }
-        
-        
+      }
+      .info-address,
+      .info-phone,
+      .info-email {
+        padding-left: 2.4rem;
+        &::before {
+          position: absolute;
+          left: 0;
+          font-weight: 700;
+          font-size: 1.4rem;
+          @include box(1.4rem);
+        }
+      }
+      .info-address::before {
+        @include fa5('\f3c5');
+      }
+      .info-phone::before {
+        @include fa5('\f879');
+      }
+      .info-email::before {
+        @include fa5('\f0e0');
       }
     }
   }
@@ -87,11 +132,14 @@
       height: 100%;
       object-fit: contain;
     }
+    @include media-breakpoint-down(lg){
+      max-width: 27rem;
+    }
   }
   &-bct {
     display: block;
     img {
-      max-height: 3.8rem;
+      max-height: 5.6rem;
       object-fit: contain;
     }
   }
@@ -151,7 +199,7 @@
     }
   }
   & .social-network {
-    margin-bottom: 4.3rem;
+    margin-bottom: 3rem;
     @include media-breakpoint-down(md) {
       margin-bottom: 1.5rem;
     }

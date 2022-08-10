@@ -1,4 +1,18 @@
 $(document).ready(function () {
+  let player = videojs('my-player', {
+    controls: true,
+    controlBar: {
+      pictureInPictureToggle: false,
+      remainingTimeDisplay:false
+
+    },
+    autoplay: false,
+    preload: 'auto',
+    autoSetup: false
+  });
+  var myButton = player.controlBar.addChild("button");
+  myButton.addClass("button-setting");
+  var myButtonDom = myButton.el();
   $('.hot-news-list,.football-fixture').owlCarousel({
     items: 1,
     loop: true,
@@ -42,7 +56,6 @@ $(document).ready(function () {
         items: 1,
         nav: false,
         margin: 10,
-        stagePadding: 10,
         autoWidth:true,
       },
       768: {
