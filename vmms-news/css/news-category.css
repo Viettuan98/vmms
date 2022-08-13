@@ -1948,5 +1948,98 @@ a:hover {
     padding-left: 1.5rem;
   }
 }
+.news-category .news-calendar {
+  margin-bottom: 5rem;
+}
+@media (max-width: 767.98px) {
+  .news-category .news-calendar {
+    margin-bottom: 3rem;
+  }
+}
+.news-category .news-calendar-title {
+  text-align: center;
+  padding: 1.1rem 0;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+  background: #1a1a1a;
+  border-radius: 1rem 1rem 0 0;
+}
+.news-category .news-calendar .calendar {
+  position: relative;
+}
+.news-category .news-calendar .calendar-nav button {
+  outline: none !important;
+  border: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  position: absolute;
+  top: 1.85rem;
+}
+.news-category .news-calendar .calendar-nav button img {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: inline-block;
+}
+.news-category .news-calendar .calendar-nav button.btn-prev {
+  left: 2.2rem;
+}
+.news-category .news-calendar .calendar-nav button.btn-next {
+  right: 2.2rem;
+}
+.news-category .news-calendar .calendar .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  height: 5.3rem;
+  background: #e5e5e5;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+}
+.news-category .news-calendar .calendar .info p {
+  color: #000;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+}
+.news-category .news-calendar .calendar .date {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+.news-category .news-calendar .calendar .date .day-name {
+  height: 4.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+.news-category .news-calendar .calendar .date.date-container {
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+}
+.news-category .news-calendar .calendar .date.date-container .day {
+  height: 4.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+.news-category .news-calendar .calendar .date.date-container .day:nth-of-type(7n+1) {
+  color: #777777;
+}
 
 /*# sourceMappingURL=news-category.css.map */

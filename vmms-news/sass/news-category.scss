@@ -283,29 +283,110 @@
           }
         }
       }
-      @include media-breakpoint-up(lg){
+      @include media-breakpoint-up(lg) {
         &:nth-of-type(2),
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
           width: 50%;
-          .box-image{
-              display: none;
+          .box-image {
+            display: none;
           }
           .box-blog-post__title {
-              -webkit-line-clamp: 3;
+            -webkit-line-clamp: 3;
           }
           .box-blog-post__desc {
-              -webkit-line-clamp: 3;
+            -webkit-line-clamp: 3;
           }
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
           padding-right: 1.5rem;
         }
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
           padding-left: 1.5rem;
-          
         }
       }
-   
+    }
+  }
+  .news-calendar {
+    margin-bottom: 5rem;
+    @include media-breakpoint-down(sm){
+      margin-bottom: 3rem;
+    }
+    &-title {
+      text-align: center;
+      padding: 1.1rem 0;
+      color: #fff;
+      @include font(2, 2.7, 600);
+      background: #1a1a1a;
+      border-radius: 1rem 1rem 0 0;
+    }
+    .calendar {
+      position: relative;
+      &-nav{
+        button{
+          outline: none !important;
+          border: none;
+          @include box(1.7rem);
+          display: inline-block;
+          padding: 0;
+          background: transparent;
+          position: absolute;
+          top:1.85rem;
+          img{
+            @include box(1.7rem);
+            display: inline-block;
+          }
+          &.btn-prev{
+            left: 2.2rem;
+          }
+          &.btn-next{
+            right: 2.2rem;
+          }
+        }
+      }
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        height: 5.3rem;
+        background: #e5e5e5;
+        @include font(2, 2.7, 600);
+
+        p {
+          color: #000;
+          @include font(2, 2.7, 600);
+        }
+      }
+      .date {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        .day-name {
+          height: 4.2rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #000000;
+          @include font(1.6,2.2,600 );
+        }
+        &.date-container {
+          border-radius: 0px 0px 10px 10px;
+          border-bottom: 1px solid #e5e5e5;
+          padding-bottom: 1rem;
+          .day {
+            height: 4.2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            @include font(1.6,2.2 );
+            color: #000000;
+            &:nth-of-type(7n+1){
+              color: #777777;
+            }
+          }
+        }
+      }
     }
   }
 }
