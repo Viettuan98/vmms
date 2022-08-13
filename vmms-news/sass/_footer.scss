@@ -2,6 +2,10 @@
   &--top {
     border-top: 1rem solid #ddd;
     padding: 3rem 0 2rem;
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
     .container {
       display: flex;
       flex-flow: row wrap;
@@ -19,6 +23,12 @@
           flex: unset;
           border-right: none;
           padding-right: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          flex-flow: row wrap;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #e5e5e5;
+          margin-bottom: 2rem;
         }
       }
       .col-download {
@@ -41,6 +51,10 @@
           margin-bottom: 3rem;
           text-transform: uppercase;
           color: #000;
+          @include media-breakpoint-down(sm) {
+            @include font(1.4, 1.9);
+            margin-bottom: 1.8rem;
+          }
         }
         &-link {
           display: flex;
@@ -60,6 +74,10 @@
   &--bottom {
     padding: 3.2rem 1.5rem 3.7rem;
     position: relative;
+    @include media-breakpoint-down(sm) {
+      padding-top: 2rem;
+      padding-bottom: 7.6rem;
+    }
     .col-info {
       padding-left: 11.5rem;
       display: flex;
@@ -69,11 +87,56 @@
         padding-left: 3rem;
         gap: 3rem 10rem;
       }
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         padding-left: 1.5rem;
+      }
+      @include media-breakpoint-down(sm) {
+        gap: 3rem 0rem;
       }
       &-item {
         width: calc(50% - 6rem);
+        order: 2;
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          position: relative;
+          &:nth-of-type(2) {
+            order: 1;
+            margin-bottom: 1rem;
+            &::after {
+              content: '';
+              width: 100%;
+              height: 0;
+              border-bottom: 1px solid #e5e5e5;
+              display: inline-block;
+              position: absolute;
+              bottom: -2rem;
+            }
+            .col-info-content {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              p {
+                padding-top: 0;
+              }
+            }
+          }
+          &:nth-of-type(3) {
+            margin-bottom: 1rem;
+            &::after {
+              content: '';
+              width: 100%;
+              height: 0;
+              border-bottom: 1px solid #e5e5e5;
+              display: inline-block;
+              position: absolute;
+              bottom: -2rem;
+            }
+          }
+          &:nth-of-type(4) {
+            .col-info-title{
+              @include font(2, 2.7, 600);
+            }
+          }
+        }
       }
       &-title {
         @include font(2, 2.7, 600);
@@ -81,6 +144,13 @@
         margin-bottom: 1.5rem;
         &.text-blue {
           color: #0077ff;
+          @include media-breakpoint-down(sm) {
+            @include font(2, 2.7, 600);
+          }
+        }
+        @include media-breakpoint-down(sm) {
+          @include font(1.6, 2.2);
+          text-transform: uppercase;
         }
       }
       &-content {
@@ -122,7 +192,11 @@
       }
     }
   }
-
+  .col-logo{
+    @include media-breakpoint-down(sm){
+      position: unset;
+    }
+  }
   &-logo {
     display: block;
     width: 100%;
@@ -132,12 +206,19 @@
       height: 100%;
       object-fit: contain;
     }
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
       max-width: 27rem;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
   }
   &-bct {
     display: block;
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      bottom: 0;
+    }
     img {
       max-height: 5.6rem;
       object-fit: contain;
@@ -177,6 +258,9 @@
   }
   .menu-footer {
     &:first-of-type {
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e5e5e5;
       a {
         color: #000000;
         font-weight: 600;
@@ -188,6 +272,9 @@
       @include font(1.4, 2.2);
       color: #1a1a1a;
       padding-bottom: 1rem;
+      @include media-breakpoint-down(sm) {
+        font-weight: 600;
+      }
       &:hover {
         color: $primary-color;
       }
@@ -196,6 +283,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 0 0.5rem;
+      width: 100%;
     }
   }
   & .social-network {
@@ -203,10 +291,20 @@
     @include media-breakpoint-down(md) {
       margin-bottom: 1.5rem;
     }
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 2rem;
+    }
     &__title {
       @include font(2, 2.2, 600);
       margin-bottom: 1.5rem;
       color: $black;
+      @include media-breakpoint-down(sm) {
+        @include font(1.6, 2.2);
+        text-transform: uppercase;
+        margin-bottom: 1.6rem;
+      }
     }
     &__list {
       display: flex;

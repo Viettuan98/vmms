@@ -120,10 +120,9 @@ $(document).ready(function () {
     ],
     responsive: {
       0: {
-        items: 1,
+        items: 3,
         nav: false,
-        margin: 10,
-        stagePadding: 10,
+        margin: 20,
         autoWidth:true,
       },
       768: {

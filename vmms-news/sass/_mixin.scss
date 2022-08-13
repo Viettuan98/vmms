@@ -48,6 +48,7 @@
     @include font(1.8, 2.4);
     padding: 1.2rem 4.7rem 1.2rem 4.7rem;
     min-width: 20.7rem;
+    margin-bottom: 2rem;
   }
   &::before {
     content: '';

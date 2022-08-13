@@ -94,7 +94,6 @@
                 <a href="/" class="logo">
                   <img srcset="./images/logo-vmms.jpg" alt="" />
                 </a>
-                
               </div>
               <div class="header-main--right col-lg-9">
                 <div class="search-tags">
@@ -1221,12 +1220,17 @@
               <div class="col-lg-8">
                 <div class="box-video">
                   <div class="video">
-                    <video id="my-player" class="video-js" poster='./images/img-video5.png'>
-                      <source src="./media/video.mp4" type="video/mp4">
+                    <video
+                      id="my-player"
+                      class="video-js"
+                      poster="./images/img-video5.png"
+                    >
+                      <source src="./media/video.mp4" type="video/mp4" />
                     </video>
                   </div>
-                  <div class="video-name">Sự nghiệp vinh quang và thăng trầm của Kaka</div>
-
+                  <div class="video-name">
+                    Sự nghiệp vinh quang và thăng trầm của Kaka
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4">
@@ -2222,42 +2226,76 @@
       <div class="mobile-sidebar d-lg-none">
         <div class="mobile-sidebar--top">
           <a href="!#" class="mobile-sidebar-logo"
-            ><img src="./images/logo-vmms.png" alt="Logo"
+            ><img src="./images/logo-vmms.jpg" alt="Logo"
           /></a>
           <i class="mobile-sidebar-close"></i>
         </div>
         <div class="mobile-sidebar--bottom">
-          <ul class="menu">
-            <li class="menu-item active">
-              <a href="#!" class="menu-link">Trang chủ</a>
+          <div class="search-form">
+            <form role="search" method="get" action="">
+              <input
+                type="search"
+                name=""
+                class="search-form__input"
+                placeholder="Nhập từ khoá tìm kiếm..."
+              />
+              <button
+                type="submit"
+                value="Tìm kiếm"
+                class="search-form__button"
+              >
+                <i class="far fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="search-tags">
+            <div class="list-tag">
+              <a href="" class="tag-item">#Covid 19</a>
+              <a href="" class="tag-item">#Năng lượng tích cực</a>
+              <a href="" class="tag-item">#Khám phá Việt Nam</a>
+            </div>
+          </div>
+          <ul class="list-contact">
+            <li class="contact-item">
+              <i class="fas fa-phone-alt"></i>0962.180.180
             </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Giới thiệu</a>
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i>info@vmms.vn
             </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Sản phẩm</a>
+            <li class="contact-item">
+              <i class="fas fa-clock"></i>Thứ 4, 01/06/2022
             </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Tin tức</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Khuyến mãi</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Hướng dẫn mua hàng</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Liên Hệ</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Đăng ký</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!" class="menu-link">Đăng nhập</a>
-            </li>
+          </ul>
+          <div class="social-network">
+            <ul class="social-network__list">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  rel="nofollow"
+                  target="_blank"
+                  ><img src="./images/icon-face-gray.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="" rel="nofollow" target="_blank"
+                  ><img src="./images/icon-instagram-gray.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="" rel="nofollow" target="_blank"
+                  ><img src="./images/icon-twitter-gray.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" rel="nofollow" target="_blank"
+                  ><img src="./images/icon-youtube-gray.svg" alt="youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="menu-lang">
             <li class="menu-item menu-item-has-child menu-item-lang">
               <a href="#!" class="menu-link">Ngôn ngữ</a>
-              <span class="toggle"><i class="fal fa-chevron-down"></i></span>
               <ul class="sub-menu">
                 <li class="menu-item menu-item-lang--vi active">
                   <a href="#!" class="menu-link">Tiếng Việt</a>
@@ -2268,9 +2306,6 @@
               </ul>
             </li>
           </ul>
-          <div class="phone-number d-block">
-            <a href="tel:0962180180">0962.180.180</a>
-          </div>
         </div>
       </div>
       <div class="menu-bars-close"></div>
