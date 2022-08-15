@@ -84,8 +84,10 @@ $(document).ready(function () {
   });
 });
 
-const btn_menu = document.querySelector(".menu-all");
-btn_menu.addEventListener('click',()=>{
+document.querySelector('.menu-all').addEventListener('click', () => {
+  document.querySelector('.menu-category').classList.toggle('show');
+});
 
-})
-
+document.querySelector('.menu-category-close').addEventListener('click', () => {
+  document.querySelector('.menu-category').classList.remove('show');
+});
