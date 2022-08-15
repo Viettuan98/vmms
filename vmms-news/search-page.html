@@ -21,11 +21,11 @@
     />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./css/news-category.css" />
+    <link rel="stylesheet" href="./css/search-page.css" />
   </head>
 
   <body>
-    <div class="wrapper news-category">
+    <div class="wrapper search-page">
       <header class="header">
         <div class="top-bar">
           <div class="container">
@@ -138,7 +138,7 @@
                   <li class="menu-item">
                     <a href="#!" class="menu-link">Lịch thi đấu</a>
                   </li>
-                  <li class="menu-item active">
+                  <li class="menu-item">
                     <a href="#!" class="menu-link">Chuyển nhượng</a>
                   </li>
                   <li class="menu-item">
@@ -184,72 +184,47 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <div class="blog-title">Chuyển nhượng</div>
+              <div class="blog-title">Tìm kiếm:</div>
             </div>
             <div class="col-lg-8">
+                <div class="search">
+                    <form role="search" method="get" action="">
+                        <input type="text" name="" class="search__input" placeholder="Nhập từ khoá tìm kiếm..." value ="chuyển nhượng">
+                        <span class="search__reset">
+                        </span>
+                        <button type="submit" value="Tìm kiếm" class="search__button">
+                          <i class="far fa-search"></i>
+                        </button>
+                      </form>
+                      <div class="search-results">
+                        Có <span class="search-results__count">73.948</span> tin tức, video về <span class="search-results__key">"chuyển nhượng"</span>
+                      </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-item">
+                        <label>Chuyên mục</label>
+                        <select class="form-control">
+                          <option>Tất cả chuyên mục</option>
+                          <option>Chuyên mục A</option>
+                          <option>Chuyên mục B</option>
+                          <option>Chuyên mục C</option>
+                          <option>Chuyên mục D</option>
+                        </select>
+                      </div>
+                    <div class="filter-item">
+                        <label>Thời gian</label>
+                        <select class="form-control">
+                          <option>Tất cả thời gian</option>
+                          <option>Tháng 8</option>
+                          <option>Tháng 7</option>
+                          <option>Tháng 6</option>
+                          <option>Tháng 5</option>
+                        </select>
+                      </div>
+                      
+                </div>
               <div class="blog-list">
-                <div class="box-blog-post box-blog-post--first">
-                  <a href="#">
-                    <div class="box-image image-cover">
-                      <img
-                        src="./images/new5.png"
-                        class="box-blog-post__image"
-                      />
-                    </div>
-                    <div class="box-content">
-                      <h5 class="box-blog-post__title">
-                        Xác nhận: M.U chốt xong kế hoạch cho vị trí hậu vệ phải
-                      </h5>
-                      <div class="box-blog-post__desc">
-                        Đội chủ sân Old Trafford đã đưa ra phương án cụ thể cho
-                        một khu vực, giờ đây họ sẽ tập trung vào những mục tiêu
-                        trọng yếu hơn.
-                      </div>
-                      <button class="btn btn-primary">Xem chi tiết</button>
-                    </div>
-                  </a>
-                </div>
-                <div class="box-blog-post">
-                  <a href="">
-                    <div class="box-image image-cover">
-                      <img
-                        src="./images/new6.png"
-                        class="box-blog-post__image"
-                      />
-                    </div>
-                    <div class="box-content">
-                      <h5 class="box-blog-post__title">
-                        M.U nhắm 'cỗ máy tuyến giữa' dự phòng cho De Jong
-                      </h5>
-                      <div class="box-blog-post__desc">
-                        Đội chủ sân Old Trafford gần như chắc chắn sẽ chào đón
-                        sự xuất hiện của một tiền vệ mới trong mùa Hè.
-                      </div>
-                      <div class="box-blog-post__date">01/06/2022</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="box-blog-post">
-                  <a href="">
-                    <div class="box-image image-cover">
-                      <img
-                        src="./images/new7.png"
-                        class="box-blog-post__image"
-                      />
-                    </div>
-                    <div class="box-content">
-                      <h5 class="box-blog-post__title">
-                        Gerrard nhận câu trả lời từ Xabi Alonso và Luis Suarez
-                      </h5>
-                      <div class="box-blog-post__desc">
-                        Thuyền trưởng Aston Villa đang ấp ủ dự định mời những
-                        người đồng đội cũ vào kế hoạch phát triển CLB mà ông
-                        đang dẫn dắt.
-                      </div>
-                      <div class="box-blog-post__date">01/06/2022</div>
-                    </div>
-                  </a>
-                </div>
+
                 <div class="box-blog-post">
                   <a href="">
                     <div class="box-image image-cover">
@@ -485,66 +460,6 @@
               </nav>
             </div>
             <div class="blog-sidebar col-lg-4">
-              <div class="news-calendar">
-                <div class="news-calendar-title">
-                  XEM TIN TỨC THEO NGÀY
-                </div>
-                <div class="calendar">
-                  <div class="calendar-nav">
-                    <button class="btn-prev"><img src="./images/icon-next.svg" alt="Next"></button>
-                    <button class="btn-next"><img src="./images/icon-prev.svg" alt="Prev"></button>
-                  </div>
-                  <div class="info">
-                      <p class="month">Tháng 3</p>
-                      <p class="year">2022</p>
-                  </div>
-                  <div class="date">
-                      <div class="day-name">Su</div>
-                      <div class="day-name">Mo</div>
-                      <div class="day-name">Tu</div>
-                      <div class="day-name">We</div>
-                      <div class="day-name">Th</div>
-                      <div class="day-name">Fr</div>
-                      <div class="day-name">Sa</div>
-                  </div>
-                  <div class="date date-container">
-                      <div class="day"></div>
-                      <div class="day"></div>
-                      <div class="day">1</div>
-                      <div class="day">2</div>
-                      <div class="day">3</div>
-                      <div class="day">4</div>
-                      <div class="day">5</div>
-                      <div class="day">6</div>
-                      <div class="day">7</div>
-                      <div class="day">8</div>
-                      <div class="day">9</div>
-                      <div class="day active">10</div>
-                      <div class="day">11</div>
-                      <div class="day">12</div>
-                      <div class="day">13</div>
-                      <div class="day">14</div>
-                      <div class="day">15</div>
-                      <div class="day">16</div>
-                      <div class="day">17</div>
-                      <div class="day">18</div>
-                      <div class="day">19</div>
-                      <div class="day">20</div>
-                      <div class="day">21</div>
-                      <div class="day">22</div>
-                      <div class="day">23</div>
-                      <div class="day">24</div>
-                      <div class="day">25</div>
-                      <div class="day">26</div>
-                      <div class="day">27</div>
-                      <div class="day">28</div>
-                      <div class="day">29</div>
-                      <div class="day">30</div>
-                      <div class="day">31</div>
-                  </div>
-              </div>
-              </div>
-
               <div class="news-topview">
                 <div class="news-topview-title">Tin tức xem nhiều</div>
                 <div class="news-topview-list">
@@ -670,8 +585,8 @@
                   </li>
                 </div>
               </div>
-            </div>
           </div>
+          
         </div>
       </main>
       <footer class="footer">
@@ -957,6 +872,260 @@
         </div>
       </div>
       <div class="menu-bars-close"></div>
+      <div class="menu-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-top col-sm-12">
+                    <div class="menu-category-title">
+                        TẤT CẢ CHUYÊN MỤC
+                    </div>
+                    <div class="menu-category-close">
+                        Đóng <img src="./images/icon-close.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Lịch thi đấu</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Premier League</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">La Liga</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Serie A</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bundesliga</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Ligue 1</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">V-League</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Chuyển nhượng</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Trong nước</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Quốc tế</a>
+                        </li>
+                       
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Việt Nam</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">U23 Việt Nam</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá Nam</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá Nữ</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">V-League</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Futsal Việt Nam</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Anh</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Ngoại Hạng Anh</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Cúp FA</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">League Cup</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Hạng nhất Anh</a>
+                        </li>
+                        
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Tây Ban Nha</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">La Liga</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Cúp nhà vua</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Hạng 2 Tây Ban Nha</a>
+                        </li>
+                  
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Ý</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Ý</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Serie A</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Serie B</a>
+                        </li>
+                  
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Đức</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bundesliga</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Cúp quốc gia Đức</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Hạng 2 Đức</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Pháp</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Ligue 1</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Ligue 2</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Cúp quốc gia Pháp</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Châu Âu</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Cúp C1</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Lịch thi đấu C1</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Europa League</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Uefa Nations League</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Euro</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">U21 Châu Âu</a>
+                        </li>
+                        <li class="menu-item menu-item-viewmore">
+                          <a href="/tieuchuan.html" class="menu-link">Xem thêm</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Quốc tế</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Bóng đá Đông Nam Á</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">AFF Cup 2022</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">SEA Games 31</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">AFC Champions League</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">AFC Cup</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Asian Cup</a>
+                        </li>
+                        <li class="menu-item menu-item-viewmore">
+                          <a href="/tieuchuan.html" class="menu-link">Xem thêm</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Video</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Huyền thoại</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá vui</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá Việt Nam</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá Anh</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá Tây Ban Nha</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Bóng đá Ý</a>
+                        </li>
+                        <li class="menu-item menu-item-viewmore">
+                          <a href="/tieuchuan.html" class="menu-link">Xem thêm</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#!" class="menu-link">Top Câu lạc bộ</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="/introduce.html" class="menu-link">Manchester United</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Liverpool</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Chelsea</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Barcelona</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Real Madrid</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="/tieuchuan.html" class="menu-link">Juventus</a>
+                        </li>
+                        <li class="menu-item menu-item-viewmore">
+                          <a href="/tieuchuan.html" class="menu-link">Xem thêm</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        
+      </div>
     </div>
     <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
     <script

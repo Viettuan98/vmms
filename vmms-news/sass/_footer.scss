@@ -260,7 +260,9 @@
     &:first-of-type {
       padding-bottom: 1rem;
       margin-bottom: 2rem;
-      border-bottom: 1px solid #e5e5e5;
+      @include media-breakpoint-down(sm){
+        border-bottom: 1px solid #e5e5e5;
+      }
       a {
         color: #000000;
         font-weight: 600;

@@ -227,6 +227,23 @@ p {
     max-width: 1200px;
   }
 }
+.wrapper {
+  position: relative;
+}
+
+.row {
+  --bs-gutter-x: 3rem;
+}
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: #BE000C;
 }
@@ -294,49 +311,6 @@ a:hover {
   left: 0;
 }
 
-.breadcrumb {
-  background: #f5f5f5;
-  height: 4.9rem;
-  padding: 1.5rem 0;
-  margin-bottom: 8rem;
-}
-@media (max-width: 991.98px) {
-  .breadcrumb {
-    margin-bottom: 4rem;
-  }
-}
-@media (max-width: 767.98px) {
-  .breadcrumb {
-    margin-bottom: 1.5rem;
-    height: auto;
-  }
-}
-.breadcrumb-list {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-.breadcrumb-item a {
-  color: rgba(0, 0, 0, 0.4509803922);
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-}
-.breadcrumb-item a:hover {
-  color: #000000;
-}
-.breadcrumb-item.active {
-  color: #000000;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-}
-.breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.8rem;
-}
-.breadcrumb-item + .breadcrumb-item::before {
-  padding-right: 0.8rem;
-  color: rgba(0, 0, 0, 0.4509803922);
-}
-
 .modal-open .modal {
   padding: 0 !important;
   background: rgba(43, 43, 43, 0.7);
@@ -366,7 +340,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8.4rem;
+  height: 7.2rem;
   background: #fff;
 }
 @media (max-width: 991.98px) {
@@ -558,10 +532,10 @@ a:hover {
   background: #000;
 }
 .header-logo {
-  height: 4.4rem;
+  height: 4.2rem;
 }
 .header-logo img {
-  height: 4.4rem;
+  height: 4.2rem;
 }
 @media (max-width: 991.98px) {
   .header-logo img {
@@ -890,7 +864,7 @@ a:hover {
   font-size: 1.4rem;
   line-height: 1.9rem;
   font-weight: 600;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .mobile-sidebar-logo {
   height: 4rem;
@@ -1089,6 +1063,101 @@ a:hover {
 }
 .modal-signin button.close span {
   display: none;
+}
+
+.menu-category {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 16.2rem);
+  background: #fff;
+  z-index: 103;
+  top: 16.2rem;
+  padding: 3rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.menu-category.show {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-category .col-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.menu-category .col-top::before {
+  content: "";
+  display: block;
+  width: calc(100% - 3rem);
+  height: 0;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.menu-category-title {
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+}
+.menu-category-title::before {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 0;
+  position: absolute;
+  bottom: -0.5rem;
+  border-bottom: 1px solid #BE000C;
+}
+.menu-category-close {
+  font-size: 2rem;
+  line-height: 2.7rem;
+  display: flex;
+  align-items: center;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+.menu-category-close img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 0.9rem;
+}
+.menu-category .menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem 3rem;
+}
+.menu-category .menu-item-viewmore {
+  text-decoration: underline;
+}
+.menu-category .menu-item-viewmore a {
+  color: #777;
+}
+.menu-category .menu-link {
+  display: block;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  padding-bottom: 1rem;
+}
+.menu-category .menu-link:hover {
+  color: #1877f2;
+  text-decoration: underline;
+}
+.menu-category .menu > .menu-item > .menu-link {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #BE000C !important;
+  padding-bottom: 1rem;
+  text-decoration: unset !important;
 }
 
 @-webkit-keyframes stuckMoveDown {
@@ -1418,7 +1487,11 @@ a:hover {
 .footer .menu-footer:first-of-type {
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #e5e5e5;
+}
+@media (max-width: 767.98px) {
+  .footer .menu-footer:first-of-type {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 .footer .menu-footer:first-of-type a {
   color: #000000;

@@ -53,7 +53,7 @@ $(document).ready(function () {
       }
     );
   }
-  $('.btn-minus').on('click', function(e) {
+  $('.btn-minus').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
     var $input = $this.closest('div').find('input');
@@ -66,10 +66,9 @@ $(document).ready(function () {
     }
 
     $input.val(value);
-
   });
 
-  $('.btn-plus').on('click', function(e) {
+  $('.btn-plus').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
     var $input = $this.closest('div').find('input');
@@ -78,9 +77,15 @@ $(document).ready(function () {
     if (value < 100) {
       value = value + 1;
     } else {
-      value =100;
+      value = 100;
     }
 
     $input.val(value);
   });
 });
+
+const btn_menu = document.querySelector(".menu-all");
+btn_menu.addEventListener('click',()=>{
+
+})
+
